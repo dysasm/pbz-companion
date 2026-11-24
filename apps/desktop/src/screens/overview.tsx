@@ -28,7 +28,8 @@ export function OverviewScreen() {
   const pending = useApp((s) => s.pending);
   const setPlayerResource = useApp((s) => s.setPlayerResource);
   const setGameOption = useApp((s) => s.setGameOption);
-  const setSection = useApp((s) => s.setSection);
+  const setWorkspaceMode = useApp((s) => s.setWorkspaceMode);
+  const setPanelTab = useApp((s) => s.setPanelTab);
   const focusOnMap = useApp((s) => s.focusOnMap);
 
   const [dustDraft, setDustDraft] = useState('');
@@ -70,13 +71,20 @@ export function OverviewScreen() {
         description={`Saved ${formatPbzStamp(overview.dateTime)} · Level ${overview.currentLevel || 'Unknown'} · Last bell ${overview.lastBellId || '—'}`}
         actions={
           <>
-            <Button variant="outline" size="sm" onClick={() => setSection('world')}>
+            <Button variant="outline" size="sm" onClick={() => setWorkspaceMode('map')}>
               <Compass />
-              Open World Map
+              Back to Map
             </Button>
-            <Button variant="outline" size="sm" onClick={() => setSection('missables')}>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => {
+                setPanelTab('chronicle');
+                setWorkspaceMode('map');
+              }}
+            >
               <AlertTriangle />
-              Check Missables
+              Story Chronicle
             </Button>
           </>
         }
@@ -115,8 +123,15 @@ export function OverviewScreen() {
           title="Region Completion"
           description="Exact in-game DT_MapItemData counters. Click any region to inspect it on the World Map."
           actions={
-            <Button variant="ghost" size="xs" onClick={() => setSection('completion')}>
-              Full breakdown
+            <Button
+              variant="ghost"
+              size="xs"
+              onClick={() => {
+                setPanelTab('completion');
+                setWorkspaceMode('map');
+              }}
+            >
+              Open map
             </Button>
           }
           contentClassName="grid gap-3 sm:grid-cols-2"
@@ -129,7 +144,7 @@ export function OverviewScreen() {
                 type="button"
                 onClick={() => {
                   if (reg.mapRegionId) focusOnMap(reg.mapRegionId);
-                  else setSection('completion');
+                  else setWorkspaceMode('map');
                 }}
                 className="group flex cursor-pointer flex-col gap-2 rounded-lg border bg-background/40 p-3 text-left transition-colors hover:border-brand/50 hover:bg-accent/40"
               >

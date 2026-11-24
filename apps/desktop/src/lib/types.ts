@@ -250,6 +250,22 @@ export interface QuestBranchView {
   taskDone: number | null;
   taskTotal: number | null;
   mapRegion: string | null;
+  u: number | null;
+  v: number | null;
+  insideMap: boolean;
+}
+
+export interface QuestMapPin {
+  questId: string;
+  questTitle: string;
+  categoryName: string;
+  branchId: string;
+  stepText: string;
+  details: string | null;
+  mapRegion: string;
+  u: number;
+  v: number;
+  insideMap: boolean;
 }
 
 export interface QuestItemView {

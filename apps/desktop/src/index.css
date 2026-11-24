@@ -7,9 +7,10 @@
 
 @theme inline {
   --font-heading: var(--font-sans);
-  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Geist Variable", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono Variable", ui-monospace, monospace;
   --color-brand: var(--brand);
+  --color-brand-dim: var(--brand-dim);
   --color-brand-foreground: var(--brand-foreground);
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -30,6 +31,9 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
   --color-sidebar: var(--sidebar);
+  --color-jade: var(--jade);
+  --color-ochre: var(--ochre);
+  --color-cinnabar: var(--cinnabar);
   --color-ok: var(--ok);
   --color-ok-soft: var(--ok-soft);
   --color-ok-strong: var(--ok-strong);
@@ -45,77 +49,97 @@
   --radius-xl: calc(var(--radius) * 1.4);
 }
 
-:root {
-  /* Phantom Blade Zero crimson-vermilion ink accent */
-  --brand: oklch(0.55 0.21 22);
-  --brand-foreground: oklch(0.99 0 0);
-  --background: oklch(0.985 0.003 75);
-  --foreground: oklch(0.145 0.005 60);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0.005 60);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0.005 60);
-  --primary: oklch(0.205 0.005 60);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.955 0.004 75);
-  --secondary-foreground: oklch(0.205 0.005 60);
-  --muted: oklch(0.955 0.004 75);
-  --muted-foreground: oklch(0.52 0.008 60);
-  --accent: oklch(0.945 0.006 75);
-  --accent-foreground: oklch(0.205 0.005 60);
-  --destructive: oklch(0.56 0.22 25);
-  --border: oklch(0.9 0.005 70);
-  --input: oklch(0.9 0.005 70);
-  --ring: oklch(0.55 0.21 22);
-  --sidebar: oklch(0.97 0.004 75);
-  --radius: 0.625rem;
-  --ok: #16a34a;
-  --ok-soft: #dcfce7;
-  --ok-strong: #15803d;
-  --warn: #d97706;
-  --warn-soft: #fef3c7;
-  --warn-strong: #92400e;
-  --bad: #dc2626;
-  --bad-soft: #fee2e2;
-  --bad-strong: #b91c1c;
+/* Signature PBZ Companion dark wuxia palette (default) */
+:root,
+.dark {
+  --brand: #d9b96a;
+  --brand-dim: #8a7440;
+  --brand-foreground: #17130a;
+  --background: #0d0f12;
+  --foreground: #e8e4da;
+  --card: #14171c;
+  --card-foreground: #e8e4da;
+  --popover: #171b21;
+  --popover-foreground: #e8e4da;
+  --primary: #d9b96a;
+  --primary-foreground: #17130a;
+  --secondary: #1a1e24;
+  --secondary-foreground: #e8e4da;
+  --muted: #1a1e24;
+  --muted-foreground: #8b8f98;
+  --accent: #1f242c;
+  --accent-foreground: #f2efe6;
+  --destructive: #c9563f;
+  --border: #262b33;
+  --input: #262b33;
+  --ring: #d9b96a;
+  --sidebar: #14171c;
+  --radius: 0.5rem;
+
+  --jade: #7fa58a;
+  --ochre: #c9a45c;
+  --cinnabar: #c9563f;
+
+  --ok: #7fa58a;
+  --ok-soft: #14201a;
+  --ok-strong: #8ec09c;
+  --warn: #c9a45c;
+  --warn-soft: #221d12;
+  --warn-strong: #e3c278;
+  --bad: #c9563f;
+  --bad-soft: #281614;
+  --bad-strong: #eb8470;
 }
 
-.dark {
-  --brand: oklch(0.64 0.21 22);
-  --brand-foreground: oklch(0.99 0 0);
-  --background: oklch(0.135 0.006 270);
-  --foreground: oklch(0.965 0.005 75);
-  --card: oklch(0.18 0.007 270);
-  --card-foreground: oklch(0.965 0.005 75);
-  --popover: oklch(0.18 0.007 270);
-  --popover-foreground: oklch(0.965 0.005 75);
-  --primary: oklch(0.94 0.005 75);
-  --primary-foreground: oklch(0.16 0.006 270);
-  --secondary: oklch(0.24 0.008 270);
-  --secondary-foreground: oklch(0.965 0.005 75);
-  --muted: oklch(0.22 0.007 270);
-  --muted-foreground: oklch(0.68 0.008 270);
-  --accent: oklch(0.24 0.009 270);
-  --accent-foreground: oklch(0.965 0.005 75);
-  --destructive: oklch(0.66 0.21 22);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 14%);
-  --ring: oklch(0.64 0.21 22);
-  --sidebar: oklch(0.16 0.007 270);
-  --ok: #4ade80;
-  --ok-soft: #22c55e24;
-  --ok-strong: #86efac;
-  --warn: #fbbf24;
-  --warn-soft: #f59e0b1f;
-  --warn-strong: #fcd34d;
-  --bad: #f87171;
-  --bad-soft: #ef444424;
-  --bad-strong: #fca5a5;
+/* Optional warm parchment light mode */
+.light {
+  --brand: #9a7428;
+  --brand-dim: #b99952;
+  --brand-foreground: #fcfaf5;
+  --background: #f4f1ea;
+  --foreground: #1a1c20;
+  --card: #fbf9f4;
+  --card-foreground: #1a1c20;
+  --popover: #ffffff;
+  --popover-foreground: #1a1c20;
+  --primary: #9a7428;
+  --primary-foreground: #fcfaf5;
+  --secondary: #ebe6db;
+  --secondary-foreground: #1a1c20;
+  --muted: #ebe6db;
+  --muted-foreground: #616670;
+  --accent: #e5dfd2;
+  --accent-foreground: #1a1c20;
+  --destructive: #b8422c;
+  --border: #dad4c7;
+  --input: #d2cbbd;
+  --ring: #9a7428;
+  --sidebar: #f7f4ed;
+
+  --jade: #3c7550;
+  --ochre: #9f7522;
+  --cinnabar: #b8422c;
+
+  --ok: #3c7550;
+  --ok-soft: #e2f1e7;
+  --ok-strong: #2d5d3e;
+  --warn: #9f7522;
+  --warn-soft: #f6edd8;
+  --warn-strong: #7e5a14;
+  --bad: #b8422c;
+  --bad-soft: #fae4df;
+  --bad-strong: #96301d;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+    overflow: hidden;
   }
   html {
     @apply font-sans antialiased;
@@ -124,22 +148,28 @@
     @apply bg-background text-foreground;
   }
   ::selection {
-    background: color-mix(in oklch, var(--brand) 32%, transparent);
+    background: color-mix(in srgb, var(--brand) 30%, transparent);
   }
 }
 
 @layer components {
   .scroll-thin {
     scrollbar-width: thin;
-    scrollbar-color: color-mix(in oklch, var(--foreground) 22%, transparent) transparent;
+    scrollbar-color: #363c46 transparent;
   }
   .scroll-thin::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
+  }
+  .scroll-thin::-webkit-scrollbar-track {
+    background: transparent;
   }
   .scroll-thin::-webkit-scrollbar-thumb {
     border-radius: 9999px;
-    background: color-mix(in oklch, var(--foreground) 20%, transparent);
+    background: #333842;
+  }
+  .scroll-thin::-webkit-scrollbar-thumb:hover {
+    background: #4a5160;
   }
   .numeric {
     font-variant-numeric: tabular-nums;
@@ -147,23 +177,42 @@
   }
 }
 
-@keyframes pulse-ring {
+/* PBZ cinnabar pulsing ink medallion for missing collectibles */
+@keyframes pbz-pulse {
   0% {
-    transform: scale(0.9);
-    opacity: 0.9;
+    transform: scale(0.75);
+    opacity: 0.92;
+  }
+  75% {
+    transform: scale(1.42);
+    opacity: 0;
   }
   100% {
-    transform: scale(1.75);
     opacity: 0;
   }
 }
 
-.marker-pulse::after {
+.pbz-pin-missing::after {
   content: "";
   position: absolute;
-  inset: -4px;
+  inset: -6px;
   border-radius: 9999px;
-  border: 2px solid var(--brand);
-  animation: pulse-ring 1.8s cubic-bezier(0.2, 0.7, 0.2, 1) infinite;
+  border: 2px solid var(--cinnabar);
+  animation: pbz-pulse 2s ease-out infinite;
   pointer-events: none;
+}
+
+/* Vertical PoNR timeline rail from original PBZ Companion */
+.pbz-timeline {
+  position: relative;
+  margin-left: 6px;
+}
+.pbz-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border);
 }

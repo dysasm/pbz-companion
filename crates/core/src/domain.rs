@@ -595,6 +595,9 @@ pub struct QuestBranchView {
     pub task_done: Option<usize>,
     pub task_total: Option<usize>,
     pub map_region: Option<String>,
+    pub u: Option<f64>,
+    pub v: Option<f64>,
+    pub inside_map: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1234,10 +1237,14 @@ pub fn get_quests(session: &SaveSession, cat: &Catalog) -> Result<QuestsView> {
                     dirty_time: dt.to_string(),
                     task_done,
                     task_total,
-                    map_region: br
-                        .map
-                        .as_deref()
-                        .and_then(|m| cat.map_region_for_completion_region(m)),
+                    map_region: br.map_region.clone().or_else(|| {
+                        br.map
+                            .as_deref()
+                            .and_then(|m| cat.map_region_for_completion_region(m))
+                    }),
+                    u: br.u,
+                    v: br.v,
+                    inside_map: br.inside.unwrap_or(true),
                 }
             })
             .collect();

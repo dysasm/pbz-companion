@@ -140,6 +140,7 @@ pub struct QuestTask {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct QuestBranchDef {
     pub id: String,
     #[serde(default)]
@@ -148,6 +149,14 @@ pub struct QuestBranchDef {
     pub details: Option<String>,
     #[serde(default)]
     pub map: Option<String>,
+    #[serde(default)]
+    pub map_region: Option<String>,
+    #[serde(default)]
+    pub u: Option<f64>,
+    #[serde(default)]
+    pub v: Option<f64>,
+    #[serde(default)]
+    pub inside: Option<bool>,
     #[serde(default)]
     pub pos: Option<Vec<f64>>,
     #[serde(default)]

@@ -36,6 +36,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const root = document.documentElement;
     root.classList.toggle('dark', resolved === 'dark');
+    root.classList.toggle('light', resolved === 'light');
     if (isTauri()) {
       void getCurrentWindow()
         .setTheme(resolved)
