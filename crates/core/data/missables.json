@@ -1,0 +1,745 @@
+{
+ "about": "Points of no return and missable quest steps. Each entry was traced in the game's own flow scripts (tools/gamedata/flowindex.json): its reward item IDs, the script that gives them and, where possible, the story flag that marks the deadline. Community guides (SenseOS, GamerFuzion, PowerPyx, GrindnStrat, AllThings.how) were used to find candidates and wording. Tags are EventPipeline.GlobalTags. Deadlines were cross-checked against real save history: an entry is only marked missed automatically when its point of no return is confirmed (lockedByPonr). Each point's chapter is the story quest active around it in the user's saves (last save before / first save after the flag).",
+ "pointsOfNoReturn": [
+  {
+   "id": "eldest-fu",
+   "name": "Defeating Peng Meng, the Axemaster",
+   "region": "Weeping Creek Valley",
+   "tag": "xg.击杀.斧老大",
+   "minor": true,
+   "note": "Talk to the frightened deserter in the village first.",
+   "chapter": "Against the Flow"
+  },
+  {
+   "id": "crimson-boss",
+   "name": "Defeating Bai Chilian, Lady of the Twin Serpents",
+   "region": "Crimson Forest",
+   "tag": "fjzl.击杀.弄蛇",
+   "note": "No warning. Closes most Weeping Creek / Crimson Forest tales: Feather Bow, A Healer's Mercy, Honor Among Thieves, Festering Secret, the first half of Secrets of the Baishan Sect.",
+   "chapter": "Snake's Reflection"
+  },
+  {
+   "id": "village-auntie",
+   "name": "Killing the \"Village Auntie\" puppet",
+   "region": "Village of Lu",
+   "tag": "ljc.击杀.大娘亲",
+   "minor": true,
+   "note": "Talk to the Sleeping Flower-Masked Weaver first: the puppet holds her soul.",
+   "chapter": "Heartless Remnants"
+  },
+  {
+   "id": "mu-xiaokui",
+   "name": "Defeating Mu Xiaokui",
+   "region": "Village of Lu",
+   "tag": "hp.击杀.沐小葵",
+   "note": "Closes Fiend Saws (five ribbons) and the Wild Oriole Sword pickup on the boardwalk.",
+   "chapter": "Heartless Remnants"
+  },
+  {
+   "id": "snake-door",
+   "name": "Opening the serpent-statue door into Mirage Estate (Serpent Eye, Tongue and Fang)",
+   "region": "Pangzhen",
+   "tag": "pz.77号人偶锁.开启",
+   "note": "The game warns here. Nine Crimson Forest bells go dark for good and Mirrorwood is buried in snow; finish the purple tales first.",
+   "chapter": "The Heart's Trail / The Four Serpent Houses",
+   "chapterNext": "The Way Forward"
+  },
+  {
+   "id": "leng-tu",
+   "name": "Fighting Leng Tu",
+   "region": "Mount Soulrend",
+   "tag": "dhs.击杀.冷荼",
+   "note": "Closes Secrets at the Heart of the Lake and the Lóng Pillar trials (needed for the best ending).",
+   "chapter": "A Soul's Worth"
+  },
+  {
+   "id": "soulrend-end",
+   "name": "Going past Inanis's warning in the Soulrend mountains",
+   "region": "Mount Soulrend",
+   "tag": "dhy.迎宾路.就位",
+   "note": "Leads into the final battle; you can't leave until the ending has played.",
+   "chapter": "A Soul's Worth"
+  }
+ ],
+ "missables": [
+  {
+   "id": "boulderguard",
+   "name": "Boulderguard",
+   "region": "Weeping Creek Valley",
+   "before": "Defeating Peng Meng, the Axemaster",
+   "how": "Talk to the frightened deserter in the village BEFORE killing the Axemaster (Peng Meng). He tips you off about the stone-axe amulet; then examine the Axemaster's grave to pick up Boulderguard.",
+   "rewards": [
+    "AC_ResistNonBreak"
+   ],
+   "done": {
+    "anyTag": [
+     "xg.村庄.石斧护符已获取"
+    ],
+    "anyItem": [
+     "AC_ResistNonBreak"
+    ]
+   },
+   "ready": {
+    "allTags": [
+     "xg.村庄.石斧护符情报"
+    ],
+    "text": "You have the tip: examine the Axemaster's grave to pick it up."
+   },
+   "missed": {
+    "allTags": [
+     "xg.击杀.斧老大"
+    ],
+    "noneTags": [
+     "xg.村庄.石斧护符情报"
+    ],
+    "text": "The Axemaster died before you talked to the deserter, so the grave gives nothing."
+   },
+   "fix": {
+    "tags": [
+     "xg.村庄.害怕的逃兵对话后",
+     "xg.村庄.石斧护符情报"
+    ],
+    "text": "Adds the deserter's tip. Then examine the Axemaster's grave in game to pick Boulderguard up."
+   },
+   "source": "BPF_HaiPaDeTaoBing (sets the tip only while the Axemaster is alive), BPF_FuLaoDa_FenMu (grave loots AC_ResistNonBreak).",
+   "ponr": "eldest-fu"
+  },
+  {
+   "id": "medicine-case",
+   "name": "Medicine Case (Apprentice Healer)",
+   "region": "Weeping Creek Valley",
+   "before": "Resting at the Thieves' Camp bell (some guides: beating Jing Ye)",
+   "how": "Bring Yu'er the three herbs from the valley.",
+   "rewards": [
+    "AC_Drink"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_Drink"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_Drink"
+    ],
+    "text": "Adds the Medicine Case."
+   },
+   "source": "BPF_YuEr_XG gives AC_Drink.",
+   "ponr": "crimson-boss"
+  },
+  {
+   "id": "flesh-lily",
+   "name": "Blessed Jade Pendant (Flesh Lily)",
+   "region": "Weeping Creek Valley",
+   "before": "Bai Chilian / reaching the Village of Lu (guides disagree)",
+   "how": "Defeat Hua, the Deadly Betrothed (optional boss down a hidden path), and give her Flesh Lily to Yu'er. Otherwise her father hands you the Tarnished Jade Pendant instead.",
+   "rewards": [
+    "AC_RandomDrink"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_RandomDrink"
+    ]
+   },
+   "missed": {
+    "anyItem": [
+     "I_06003"
+    ],
+    "text": "You got the Tarnished Jade Pendant, so the blessed one is gone."
+   },
+   "fix": {
+    "items": [
+     "AC_RandomDrink"
+    ],
+    "text": "Adds the Blessed Jade Pendant."
+   },
+   "source": "Mutually exclusive outcomes of Yu'er's Flesh Lily tale (AC_RandomDrink vs I_06003).",
+   "ponr": "crimson-boss"
+  },
+  {
+   "id": "feather-bow",
+   "name": "Feather Bow (Purge the Sect)",
+   "region": "Weeping Creek Valley",
+   "before": "Defeating Bai Chilian",
+   "how": "Take the Broken-String Bow at the Ruthless Archer Camp (the dying Featherbow Archer) and return it to the Brooding Old Archer on the rooftop by the Outpost bell. He gives you the Feather Bow. Hand it in right away.",
+   "rewards": [
+    "UnnamedBow"
+   ],
+   "done": {
+    "anyTag": [
+     "xg.老弓手.交还羽弓"
+    ],
+    "anyItem": [
+     "UnnamedBow"
+    ]
+   },
+   "ready": {
+    "anyItem": [
+     "I_01006"
+    ],
+    "text": "You have the Broken-String Bow: bring it to the Brooding Old Archer."
+   },
+   "missed": {
+    "allTags": [
+     "fjzl.击杀.弄蛇"
+    ],
+    "text": "Bai Chilian is defeated, which closes this tale."
+   },
+   "fix": {
+    "items": [
+     "UnnamedBow"
+    ],
+    "text": "Adds the Feather Bow."
+   },
+   "source": "BPF_NPCYuGongKe (dying archer), BPF_LaoGongShou_New (I_01006 → UnnamedBow).",
+   "ponr": "crimson-boss",
+   "lockedByPonr": true
+  },
+  {
+   "id": "quick-hand-zhang",
+   "name": "Flying Dagger & Goldblaze (Quick Hand Zhang)",
+   "region": "Crimson Forest",
+   "before": "Reaching the Thieves' Camp with Zhang still caged",
+   "how": "Free Quick Hand Zhang from the cage by the Trail of Cages bell (turn the crank wheel), then bring his treasures to his hideouts (Snuff Bottle, Bloodstained Seal, the Ancient Crossbow key, and more in later regions).",
+   "rewards": [
+    "MiaoShouFeiDao",
+    "HuangJinHuoChong"
+   ],
+   "done": {
+    "allItems": [
+     "MiaoShouFeiDao",
+     "HuangJinHuoChong"
+    ]
+   },
+   "ready": {
+    "allTags": [
+     "fjzl.小张.打开笼子"
+    ],
+    "text": "Zhang is free: keep bringing treasures to his hideouts."
+   },
+   "fix": {
+    "items": [
+     "MiaoShouFeiDao",
+     "HuangJinHuoChong"
+    ],
+    "text": "Adds the Flying Dagger and Goldblaze you don't have."
+   },
+   "source": "BPF_XiaoZhang1 (cage: fjzl.小张.打开笼子), BPF_XiaoZhang2 / _LJC / _PZ / _MGH (hideouts give MiaoShouFeiDao, HuangJinHuoChong).",
+   "ponr": "crimson-boss"
+  },
+  {
+   "id": "thundermoon",
+   "name": "Thundermoon Lantern (Zhang's Mirage Estate hideout)",
+   "region": "Mirage Estate",
+   "before": "Handing Zhang's treasures in anywhere else",
+   "how": "Hand Quick Hand Zhang's final treasures over at his Mirage Estate hideout. Any other hideout gives Quick Hand's Manual instead.",
+   "rewards": [
+    "AC_Electrified"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_Electrified"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_Electrified"
+    ],
+    "text": "Adds the Thundermoon Lantern."
+   },
+   "source": "BPF_XiaoZhang_XMSZ gives AC_Electrified.",
+   "ponr": "leng-tu"
+  },
+  {
+   "id": "healers-mercy",
+   "name": "Calming Gourd (A Healer's Mercy)",
+   "region": "Crimson Forest",
+   "before": "Defeating Bai Chilian",
+   "how": "Find Yu'er at the Thieves' Camp bell and treat the four wounded thieves.",
+   "rewards": [
+    "AC_BreakDrink"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_BreakDrink"
+    ]
+   },
+   "missed": {
+    "allTags": [
+     "fjzl.击杀.弄蛇"
+    ],
+    "text": "Bai Chilian is defeated, which closes this tale."
+   },
+   "fix": {
+    "items": [
+     "AC_BreakDrink"
+    ],
+    "text": "Adds the Calming Gourd."
+   },
+   "source": "BPF_YuEr_FJZL gives AC_BreakDrink.",
+   "ponr": "crimson-boss",
+   "lockedByPonr": true
+  },
+  {
+   "id": "honor-among-thieves",
+   "name": "Silent Wrap (Honor Among Thieves)",
+   "region": "Crimson Forest",
+   "before": "Defeating Bai Chilian",
+   "how": "Beat the Nimble Thief near the Outlaw Trap bell, carry his blood letter to the Gentle Thief and answer his three questions correctly.",
+   "rewards": [
+    "AC_Stealth"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_Stealth"
+    ]
+   },
+   "missed": {
+    "allTags": [
+     "fjzl.击杀.弄蛇"
+    ],
+    "text": "Bai Chilian is defeated, which closes this tale."
+   },
+   "fix": {
+    "items": [
+     "AC_Stealth"
+    ],
+    "text": "Adds the Silent Wrap."
+   },
+   "source": "BPF_LiangShangFei gives AC_Stealth.",
+   "ponr": "crimson-boss",
+   "lockedByPonr": true
+  },
+  {
+   "id": "festering-secret",
+   "name": "Blood Oath Dagger (Festering Secret → Four Fierce Axes)",
+   "region": "Crimson Forest",
+   "before": "Defeating Bai Chilian",
+   "how": "Talk to Forge, the smith, to start Festering Secret. It unlocks the fifth Four Fierce Axes book; the axes tale pays the Blood Oath Dagger.",
+   "rewards": [
+    "TU_06001"
+   ],
+   "done": {
+    "anyItem": [
+     "TU_06001"
+    ]
+   },
+   "missed": {
+    "allTags": [
+     "fjzl.击杀.弄蛇"
+    ],
+    "noneTags": [
+     "quest.凶斧收集物.5"
+    ],
+    "text": "Bai Chilian fell before the fifth axes book was found."
+   },
+   "fix": {
+    "items": [
+     "TU_06001"
+    ],
+    "text": "Adds the Blood Oath Dagger."
+   },
+   "source": "BPF_BaGuaTongZi gives TU_06001; quest.凶斧收集物.1–7 are the axes books.",
+   "ponr": "crimson-boss"
+  },
+  {
+   "id": "leave-none-alive",
+   "name": "Arrowward & Agarwood Prayer Beads (Leave None Alive)",
+   "region": "Village of Lu",
+   "before": "Entering the well by the Village of Lu entrance (some guides: the Smuggler's Tunnel)",
+   "how": "Give the Wounded Thief the Thief's Manual in time, or he dies. When the Stately Monk speaks, say you don't believe him (believing turns him to stone).",
+   "rewards": [
+    "AC_ResistRanged",
+    "AC_BreakRecover"
+   ],
+   "done": {
+    "allItems": [
+     "AC_ResistRanged",
+     "AC_BreakRecover"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_ResistRanged",
+     "AC_BreakRecover"
+    ],
+    "text": "Adds the rewards you don't have."
+   },
+   "source": "BPF_ShouShangDeFeiZei gives AC_ResistRanged, BPF_HuoTongRenDiZi_1 gives AC_BreakRecover.",
+   "ponr": "mu-xiaokui"
+  },
+  {
+   "id": "weaver",
+   "name": "A Dream of Motherhood (the weaver's tale)",
+   "region": "Village of Lu",
+   "before": "Killing the \"Village Auntie\" puppet before talking to the weaver",
+   "how": "Talk to the Sleeping Flower-Masked Weaver in Village of Lu first; that starts the tale. Then find the puppet holding her soul (the \"Village Auntie\"), defeat it and go back to her body. If the puppet dies before you ever talked to her, she dies too and the tale never starts. Her Mother's Talisman can still be picked up on that path.",
+   "rewards": [],
+   "done": {
+    "questDone": "Simple/RuMengQiZi"
+   },
+   "ready": {
+    "questStarted": "Simple/RuMengQiZi",
+    "text": "Tale started: defeat the puppet holding her soul, then return to her body."
+   },
+   "missed": {
+    "allTags": [
+     "ljc.女织.死亡"
+    ],
+    "noneTags": [
+     "ljc.女织.第一次对话之后"
+    ],
+    "text": "The weaver died before you ever talked to her, so the tale never started."
+   },
+   "noFix": "No fix: editing the save can't replay the tale. No item is lost: the Mother's Talisman still drops on this path.",
+   "source": "BPF_NvZhi: first talk (ljc.女织.第一次对话之后) → BeginQuest RuMengQiZi; ljc.击杀.大娘亲 + ljc.女织.死亡 when the puppet (EnemyName_041 \"Village Auntie\") dies; LootItems AC_BreakRegen. Missed in every save of this playthrough (both flags 2026-11-03 22:14).",
+   "ponr": "village-auntie",
+   "lockedByPonr": false
+  },
+  {
+   "id": "mu-xiaokui",
+   "name": "Fiend Saws & Wild Oriole Sword (Mu Xiaokui)",
+   "region": "Village of Lu",
+   "before": "Taking the elevator down to Mu Xiaokui",
+   "how": "Collect all five of Mu Xiaokui's ribbons before her boss fight. After her last health bar she calls in Iron Fiend and Jade Dancer for an extra phase. Afterwards pick up the Wild Oriole Sword on the boardwalk before leaving: the elevator breaks behind you.",
+   "rewards": [
+    "YuuBlade",
+    "LuanYing",
+    "TU_02002",
+    "K_05002"
+   ],
+   "done": {
+    "anyTag": [
+     "ljc.沐小葵.玉妖铁鬼死亡",
+     "ljc.沐小葵.最终形态击杀"
+    ]
+   },
+   "ready": {
+    "allTags": [
+     "ljc.沐小葵.满足额外剧情条件"
+    ],
+    "text": "All five ribbons found: the extra phase will happen."
+   },
+   "missed": {
+    "allTags": [
+     "hp.击杀.沐小葵"
+    ],
+    "noneTags": [
+     "ljc.沐小葵.满足额外剧情条件"
+    ],
+    "text": "She was defeated before all five ribbons were found."
+   },
+   "progressTags": [
+    "ljc.沐小葵.获得丝带1",
+    "ljc.沐小葵.获得丝带2",
+    "ljc.沐小葵.获得丝带3",
+    "ljc.沐小葵.获得丝带4",
+    "ljc.沐小葵.获得丝带5"
+   ],
+   "progressLabel": "ribbons",
+   "fix": {
+    "items": [
+     "YuuBlade",
+     "LuanYing",
+     "TU_02002",
+     "K_05002"
+    ],
+    "text": "Adds the extra phase's rewards that you don't have."
+   },
+   "source": "BPF_MuXiaoKuiSiDai (ribbons), BPF_MuXiaoKuiDeath (extra phase; YuuBlade, LuanYing, TU_02002, K_05002), BPF_LuanYingDiaoLuo.",
+   "ponr": "mu-xiaokui"
+  },
+  {
+   "id": "war-wagon",
+   "name": "War Wagon (Old Man Gen, The Journey Home)",
+   "region": "Village of Lu → Pangzhen → Meigu Lake",
+   "before": "Refusing Gen's request (he then goes to Pangzhen alone)",
+   "how": "At the Old Man Gen's Hideout bell, agree to his request (don't answer \"I'm short on time\"): he gives the Brass Key. In his house with the yellow lantern in Pangzhen's backstreet find the Old Wooden Comb and return it to Gen at the Village of Lu gate; later he gives the War Wagon at the Frozen Lake Dock bell. Follow it through in one go: players report it can also break if left half-done.",
+   "rewards": [
+    "NiTouChe"
+   ],
+   "done": {
+    "anyItem": [
+     "NiTouChe"
+    ]
+   },
+   "ready": {
+    "allTags": [
+     "ljc.老根头.同意请求"
+    ],
+    "text": "You agreed to help Gen: find the comb in Pangzhen's backstreet."
+   },
+   "fix": {
+    "items": [
+     "NiTouChe"
+    ],
+    "text": "Adds the War Wagon."
+   },
+   "source": "BPF_LJC_LaoGenTou (choices: agree → branch 3-A, key; refuse → branch 3-B), BPF_PZ_LaoGenTou (3-B: Gen's body in the backstreet, pz.老根头.第一次对话之后, gives K_05004 and finishes the quest), BPF_CollectMuShuZi (comb), BPF_LaoGenTou gives NiTouChe.",
+   "ponr": "snake-door",
+   "missed": {
+    "anyQuestBranch": [
+     [
+      "Simple/GuiTu",
+      "3-B"
+     ]
+    ],
+    "anyTag": [
+     "pz.老根头.第一次对话之后"
+    ],
+    "text": "The quest took Gen's other branch: he went to Pangzhen alone and you found his body, so the War Wagon is never handed over."
+   },
+   "lockedByPonr": false
+  },
+  {
+   "id": "red-swordswoman",
+   "name": "Twin Fish Pendant (Daughter of the Dark Sect)",
+   "region": "Mandate Encampment",
+   "before": "Fighting the Seven Stars sword formation",
+   "how": "When you meet the Red-Clad Swordswoman (Red), don't kill her: let her swing off across the chain. She joins the Seven Stars formation for a double boss fight, and her memory afterwards gives the Twin Fish Pendant.",
+   "rewards": [
+    "AC_LowShachi"
+   ],
+   "done": {
+    "anyTag": [
+     "zddy.红衣女剑客.荡绳离开"
+    ],
+    "anyItem": [
+     "AC_LowShachi"
+    ]
+   },
+   "missed": {
+    "anyTag": [
+     "zddy.击杀.红衣女剑客"
+    ],
+    "text": "You killed her early, so the Seven Stars fight ran without her."
+   },
+   "fix": {
+    "items": [
+     "AC_LowShachi"
+    ],
+    "text": "Adds the Twin Fish Pendant."
+   },
+   "source": "BPF_HongYiNvJianKe_Leave / _Dead, BPF_JianZhenDeath, BPF_JianZhen_Memory_0 gives AC_LowShachi (and dhs.决战前Npc.魔教之女).",
+   "ponr": "snake-door"
+  },
+  {
+   "id": "broken-vessel",
+   "name": "Broken Vessel (Secrets of the Baishan Sect)",
+   "region": "Crimson Forest → Mandate Encampment",
+   "before": "Bai Chilian (accepting the tale) and the Mandate Encampment boss (Wu Lengshuang)",
+   "how": "Accept the tale from Lanlan on the big bridge by the Thieves' Camp bell. In the Mandate Encampment defeat Wu Lengshuang at The Confinement bell before the main boss, and fight Yubi only once the 'defeat Bi Taotao's puppet form' objective appears.",
+   "rewards": [
+    "AC_HeavyAttackDamage"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_HeavyAttackDamage"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_HeavyAttackDamage"
+    ],
+    "text": "Adds the Broken Vessel."
+   },
+   "source": "BPF_JianOuQiangOu_Death gives AC_HeavyAttackDamage; bsmw.击杀.乌冷霜 marks Wu Lengshuang.",
+   "ponr": "snake-door"
+  },
+  {
+   "id": "heros-courage",
+   "name": "Hero's Courage (The Undying Heroic Spirit)",
+   "region": "Pangzhen",
+   "before": "Three failed releases",
+   "how": "In the Order's tavern, the Wolf Leader asks you to free six masters. Only release them while he kneels; a hit after the kneel ends counts as a failure, and three failures end the tale.",
+   "rewards": [
+    "TU_19006"
+   ],
+   "done": {
+    "anyItem": [
+     "TU_19006"
+    ]
+   },
+   "fix": {
+    "items": [
+     "TU_19006"
+    ],
+    "text": "Adds Hero's Courage."
+   },
+   "source": "BPF_BuMieXiaDan_Memory_1–4 (I_06006 shards → TU_19006).",
+   "ponr": "snake-door"
+  },
+  {
+   "id": "snow-and-blood",
+   "name": "Snow and Blood (Ledger of Atonement)",
+   "region": "Pangzhen",
+   "before": "Your reply to the Agonized Ironmask",
+   "how": "The Agonized Ironmask starts the tale; most guides say pick the harsher reply. Winning lets the puppet offer Bai Xue, who gives Snow and Blood.",
+   "rewards": [
+    "AC_Bleed"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_Bleed"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_Bleed"
+    ],
+    "text": "Adds Snow and Blood."
+   },
+   "source": "AC_Bleed (Bai Xue).",
+   "ponr": "snake-door"
+  },
+  {
+   "id": "spectral-blade",
+   "name": "Statue of the Loyal Hero (A Severed Mindseal, Spectral Blade)",
+   "region": "Weeping Creek Valley → Pangzhen → Blood-Red Forest → Soulrend Cliff",
+   "before": "Going past Inanis's warning without all three Primal Stones handed over",
+   "how": "Each time you meet the friendly Shadow Warden (Spectral Blade), find him a Primal Stone and hand it over: Weeping Creek Valley (the stone is with the Sha-Chi Tower's upper mechanism), Pangzhen / Meigu Lake, then the Blood-Red Forest. Each meeting's script checks the stones already given, so keep the chain going as each meeting opens; players report it breaks if left behind. With all three given he waits on Soulrend Cliff before the final battle and gives the Statue of the Loyal Hero, the Soul Temper material for the Crescent Blade.",
+   "rewards": [
+    "TU_13001"
+   ],
+   "done": {
+    "anyItem": [
+     "TU_13001"
+    ]
+   },
+   "ready": {
+    "allTags": [
+     "xssl.鬼差.给鬼差浑源石"
+    ],
+    "text": "All three Primal Stones given: he hands over the statue on Soulrend Cliff."
+   },
+   "progressTags": [
+    "xg.鬼差.给鬼差浑源石",
+    "jmkd.鬼差.给鬼差浑源石",
+    "xssl.鬼差.给鬼差浑源石"
+   ],
+   "progressLabel": "stones given",
+   "fix": {
+    "items": [
+     "TU_13001"
+    ],
+    "text": "Adds the Statue of the Loyal Hero."
+   },
+   "source": "BPF_XiGu_GuiCai / BPF_JMKD_GuiCai / BPF_XSSL_GuiCai (stones: xg/jmkd/xssl.鬼差.给鬼差浑源石, item I_01002; each checks the others' flags), BPF_DHY_GuiFengKe (needs xssl.鬼差.给鬼差浑源石; gives TU_13001, sets dhs.鬼差.死亡). This playthrough: statue 2026-11-18 05:14, point of no return 05:41.",
+   "ponr": "soulrend-end"
+  },
+  {
+   "id": "crude-radiant-heart",
+   "name": "Crude Radiant Heart (Lu Sanqian)",
+   "region": "Village of Lu → Mount Soulrend",
+   "before": "Refusing Lu Sanqian the Rootless Dew",
+   "how": "When Lu Sanqian asks for Rootless Dew, give it to him; refusing means he never reaches The Lady's Shrine. The letter he writes afterwards is also needed for Cui's tale.",
+   "rewards": [
+    "AC_MartialWeapon"
+   ],
+   "done": {
+    "anyItem": [
+     "AC_MartialWeapon"
+    ]
+   },
+   "fix": {
+    "items": [
+     "AC_MartialWeapon"
+    ],
+    "text": "Adds the Crude Radiant Heart."
+   },
+   "source": "BPF_LuSanQian3_New gives AC_MartialWeapon.",
+   "ponr": "soulrend-end"
+  },
+  {
+   "id": "cui",
+   "name": "Baishan Headband (Cui's tale)",
+   "region": "Mount Soulrend",
+   "before": "The Saw and the Crusher fight on Soulrend Cliff",
+   "how": "Keep Cui's Red Ribbon, and get the letter Lu Sanqian writes after drinking the Rootless Dew. Give both to Lu Jieyuan before the fight on Soulrend Cliff.",
+   "rewards": [
+    "TU_11007"
+   ],
+   "done": {
+    "anyItem": [
+     "TU_11007"
+    ]
+   },
+   "fix": {
+    "items": [
+     "TU_11007"
+    ],
+    "text": "Adds the Baishan Headband."
+   },
+   "source": "BPF_LuJieYuan_FenTou (dhs.决战前Npc.小翠); TU_11007.",
+   "ponr": "soulrend-end",
+   "lockedByPonr": true
+  },
+  {
+   "id": "dont-forget-me",
+   "name": "Ultimate Talisman (Don't Forget Me) & Ink Cut (Hero's Lament)",
+   "region": "Mountain of Imprisonment",
+   "before": "Using the lift mechanism / the prisoners dying",
+   "how": "Talk to the caged prisoners before touching the lift mechanism. Liu Yi must survive (bring back Moji's bloodstained sword) for the Ink Cut; the second prisoner must survive for the Ultimate Talisman.",
+   "rewards": [
+    "Mojian",
+    "AC_UltimateBreak"
+   ],
+   "done": {
+    "allItems": [
+     "Mojian",
+     "AC_UltimateBreak"
+    ]
+   },
+   "missed": {
+    "anyTag": [
+     "ddsd.柳义.任务死亡",
+     "ddsd.柳义.未开笼子死亡"
+    ],
+    "text": "Liu Yi died, so the Ink Cut is gone."
+   },
+   "fix": {
+    "items": [
+     "Mojian",
+     "AC_UltimateBreak"
+    ],
+    "text": "Adds the Ink Cut and Ultimate Talisman you don't have."
+   },
+   "source": "BPF_LiuYi / BPF_LiuYi1 give Mojian (ddsd.柳义.任务死亡 / 未开笼子死亡 = he died); AC_UltimateBreak.",
+   "ponr": "snake-door"
+  },
+  {
+   "id": "three-faced-puppet",
+   "name": "Three-Faced Puppet: final phase (Triple Threat)",
+   "region": "Crimson Forest (Mirrorwood)",
+   "before": "The return fight opens after you cross into Mirage Estate",
+   "how": "Fight the Aberrant Three-Faced Puppet's return with Blazing Edge as your main weapon (the Soul-Tempered Sanguine Reach, from Myst in Pangzhen). Otherwise the fight stops after its second phase: you keep Freezing Chaos but lose the third phase and Chaos Iron Fragment II.",
+   "rewards": [
+    "CiGuHunDun",
+    "TU_150022"
+   ],
+   "done": {
+    "anyTag": [
+     "fjzl.三头魔偶.p3"
+    ]
+   },
+   "missed": {
+    "allTags": [
+     "fjzl.三头魔偶.死亡"
+    ],
+    "noneTags": [
+     "fjzl.三头魔偶.p3"
+    ],
+    "text": "It died without reaching its third phase."
+   },
+   "fix": {
+    "items": [
+     "CiGuHunDun",
+     "TU_150022"
+    ],
+    "text": "Adds Freezing Chaos and Chaos Iron Fragment II if missing."
+   },
+   "source": "BPF_SanTouMoOuDeath (checks the equipped weapon; sets p2/p3; gives CiGuHunDun / Long).",
+   "ponr": "leng-tu"
+  }
+ ]
+}

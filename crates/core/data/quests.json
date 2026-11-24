@@ -1,0 +1,4506 @@
+{
+ "generated": "2026-11-20T04:00:21",
+ "source": "Quest blueprints under /Game/PBZstory/PBZQuest/ + en-US locres (installed game)",
+ "categories": [
+  {
+   "id": "story",
+   "name": "Story"
+  },
+  {
+   "id": "mystery",
+   "name": "Mysteries"
+  },
+  {
+   "id": "tale",
+   "name": "Tales"
+  },
+  {
+   "id": "collect",
+   "name": "Collectibles"
+  }
+ ],
+ "regions": [
+  {
+   "id": "XiGu",
+   "name": "Weeping Creek Valley"
+  },
+  {
+   "id": "FuJiZhiLin",
+   "name": "Crimson Forest"
+  },
+  {
+   "id": "LuJiaCun",
+   "name": "Village of Lu"
+  },
+  {
+   "id": "PangZhen",
+   "name": "Pangzhen"
+  },
+  {
+   "id": "ZhengDaoDaYing",
+   "name": "Mandate Encampment"
+  },
+  {
+   "id": "MeiGuHu",
+   "name": "Meigu Lake"
+  },
+  {
+   "id": "DengDingShanDao",
+   "name": "Mountain of Imprisonment"
+  },
+  {
+   "id": "DuanHunShan",
+   "name": "Mount Soulrend"
+  }
+ ],
+ "quests": [
+  {
+   "id": "FengYuHuo",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/FengYuHuo.FengYuHuo_C",
+   "cat": "mystery",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "GuYouDeRenWu",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/GuYouDeRenWu.GuYouDeRenWu_C",
+   "cat": "mystery",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "HongFangZi",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/HongFangZi.HongFangZi_C",
+   "cat": "mystery",
+   "title": "Crimson Manor",
+   "subtitle": "Crimson doors conceal secrets, blood shadows loom",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Use the Mute's Tongue to open the Crimson Manor",
+     "map": "XiGu",
+     "point": "HongFangZi_1",
+     "pos": [
+      -68478,
+      215168,
+      2040480
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "The Crimson Manor holds the Herald's secrets",
+     "map": "LuJiaCun",
+     "point": "HongFangZi_S1",
+     "pos": [
+      -63924,
+      89216,
+      -5500
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Continue exploring to find a way into Crimson Manor.",
+     "map": "XiGu",
+     "point": "HongFangZi_S2",
+     "pos": [
+      -68478,
+      215168,
+      2040480
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "LuJiaCun"
+   ]
+  },
+  {
+   "id": "HuXinMiMi",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/HuXinMiMi.HuXinMiMi_C",
+   "cat": "mystery",
+   "title": "SECRETS AT THE HEART OF THE LAKE",
+   "subtitle": "Still waters run deep, concealing the unspeakable",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find Firefly's Memory Flowers",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.5",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.1",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.2",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.3",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.4",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.萤火意识之花.6",
+       "map": "LuJiaCun"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Enter Dusk's Refuge",
+     "map": "LuJiaCun",
+     "point": "HuXinMiMi_2",
+     "pos": [
+      -40710,
+      115440,
+      -2029
+     ]
+    },
+    {
+     "id": "2-1",
+     "text": "Explore the canyon to find Dusk",
+     "map": "LuJiaCun",
+     "point": "HuXinMiMi_2-1",
+     "pos": [
+      -25215,
+      118430,
+      -16334
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Find a way to enter the Heart of the Lake",
+     "map": "LuJiaCun",
+     "point": "HuXinMiMi_3",
+     "pos": [
+      -25215,
+      118430,
+      -16334
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Destroy the ‘ritual’ at the Heart of the Lake!",
+     "map": "MeiGuHu",
+     "point": "HuXinMiMi_4",
+     "pos": [
+      -154858,
+      -1675,
+      752
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Collect the four Acolytes' masks and enter the Forbidden Ruins",
+     "map": "MeiGuHu",
+     "point": "HuXinMiMi_S1",
+     "pos": [
+      -187895,
+      -7287,
+      2123
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Search the Crimson Manor for the Crystal Eyeball [Yang]",
+     "map": "XiGu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.任务物品.获得红房子眼珠",
+       "map": "XiGu"
+      }
+     ]
+    },
+    {
+     "id": "S3",
+     "text": "Socket the crystal eyeball into Puppet No. 99",
+     "map": "LuJiaCun",
+     "point": "HuXinMiMi_S3",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.任务物品.安装99号眼珠"
+      }
+     ]
+    },
+    {
+     "id": "S4",
+     "text": "Find the scarecrows bearing a talisman and defeat the hidden Acolytes",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "mfzf.面具.岁寒",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "mfzf.面具.炎茹",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "mfzf.面具.雷婷",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "mfzf.面具.蛊鹤",
+       "map": "MeiGuHu"
+      }
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "regions": [
+    "LuJiaCun",
+    "MeiGuHu",
+    "XiGu"
+   ],
+   "entries": [
+    "LuJiaCun:MemoryFlower:15",
+    "LuJiaCun:MemoryFlower:3",
+    "LuJiaCun:MemoryFlower:10",
+    "LuJiaCun:MemoryFlower:2",
+    "LuJiaCun:MemoryFlower:9",
+    "LuJiaCun:MemoryFlower:1",
+    "XiGu:YaoShi:1",
+    "XiGu:YaoShi:2",
+    "LuJiaCun:DaoCaoRen:0",
+    "HouJie:DaoCaoRen:0",
+    "MeiGuHu:DaoCaoRen:0"
+   ]
+  },
+  {
+   "id": "HuanShuPiPa",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/HuanShuPiPa.HuanShuPiPa_C",
+   "cat": "mystery",
+   "title": "ILLUSORY PIPA",
+   "subtitle": "The strings still sing, yet hearts break",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Recover the head, strings, and backplate of the Chord's pipa",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.幻术琵琶.收集琴弦",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.幻术琵琶.收集琴头",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.幻术琵琶.收集背板",
+       "map": "ZhengDaoDaYing"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Ask Myst to restore the Illusory Pipa",
+     "map": "PangZhen",
+     "point": "HuanShuPiPa_2",
+     "pos": [
+      -189070,
+      122913,
+      -3907
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Play the pipa at the Spectral Gate north of Meigu Lake",
+     "map": "MeiGuHu",
+     "point": "HuanShuPiPa_3",
+     "pos": [
+      -44085,
+      -15329,
+      887
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find Myst in Pangzhen",
+     "map": "PangZhen"
+    },
+    {
+     "id": "S2",
+     "text": "Head north across Meigu Lake by boat to investigate",
+     "map": "MeiGuHu",
+     "point": "HuanShuPiPa_S2",
+     "pos": [
+      -125383,
+      73020,
+      1455
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "regions": [
+    "PangZhen",
+    "MeiGuHu"
+   ],
+   "entries": [
+    "PangZhen:Accessory:3",
+    "ZhengDaoDaYing:Weapon:1",
+    "ZhengDaoDaYing:Accessory:2",
+    "LuJiaCun:ShaChiWeapon:2"
+   ]
+  },
+  {
+   "id": "JiGuanChuan",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/JiGuanChuan.JiGuanChuan_C",
+   "cat": "mystery",
+   "title": "SHA-CHI POWERED BOAT",
+   "subtitle": "A heart of bronze, a fleeting shadow on the water",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect two Transcension Cores",
+     "map": "HouJie",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.火刀队长.杀气核心",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.双锏毕锋.杀气核心",
+       "map": "HouJie"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Install the Transcension Cores onto the Sha-Chi Powered Boat",
+     "map": "PangZhen",
+     "point": "JiGuanChuan_2"
+    },
+    {
+     "id": "S1",
+     "text": "Find the Boat Master's mechanical boat",
+     "map": "PangZhen",
+     "point": "JiGuanChuan_S1",
+     "pos": [
+      -161602,
+      91860,
+      979
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Find the Boat Master's crafting notes",
+     "map": "PangZhen",
+     "point": "JiGuanChuan_S2"
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "entries": [
+    "HouJie:ShaChiWeapon:3"
+   ]
+  },
+  {
+   "id": "KunLunSanJie",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/KunLunSanJie.KunLunSanJie_C",
+   "cat": "mystery",
+   "title": "PILLARS OF KUNLUN",
+   "subtitle": "A sword wails within its scabbard; The old oaths remain silent",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Enter the Mandate Encampment",
+     "map": "LuJiaCun",
+     "point": "KunLunSanJie_1",
+     "pos": [
+      -10983,
+      127082,
+      -1267
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Head to the training grounds deep within the Mandate Encampment",
+     "map": "ZhengDaoDaYing",
+     "point": "KunLunSanJie_2",
+     "pos": [
+      32713,
+      61075,
+      8396
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Find Huangxing at the summit",
+     "map": "DengDingShanDao",
+     "point": "KunLunSanJie_3",
+     "pos": [
+      -60698,
+      -91521,
+      29352
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Confront Huangxing inside the Shrine",
+     "map": "DengDingShanDao",
+     "point": "KunLunSanJie_4",
+     "pos": [
+      -60718,
+      -98633,
+      29436
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Use the Flying Guillotine to unlock the mechanism at the base of the Lady's statue",
+     "map": "DengDingShanDao",
+     "point": "KunLunSanJie_5",
+     "pos": [
+      -60718,
+      -102503,
+      29338
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Discover what happened to the Pillars of Kunlun",
+     "map": "LuJiaCun",
+     "point": "KunLunSanJie_S1",
+     "pos": [
+      -10983,
+      127082,
+      -1267
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Head to the Mandate Encampment, where the Pillars of Kunlun led their forces against the Maskwalkers",
+     "map": "LuJiaCun",
+     "point": "KunLunSanJie_S2",
+     "pos": [
+      -10983,
+      127082,
+      -1267
+     ]
+    },
+    {
+     "id": "S3",
+     "text": "Find Wei Sanchuan in Pangzhen",
+     "map": "LuJiaCun",
+     "point": "KunLunSanJie_S3",
+     "pos": [
+      -254301,
+      100463,
+      -3472
+     ],
+     "posMap": "XiMeng"
+    },
+    {
+     "id": "S4",
+     "text": "Head up the Mountain of Imprisonment in search of Huangxing",
+     "map": "MeiGuHu",
+     "point": "KunLunSanJie_S4",
+     "pos": [
+      -44084,
+      -15328,
+      887
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "regions": [
+    "LuJiaCun",
+    "ZhengDaoDaYing",
+    "DengDingShanDao",
+    "MeiGuHu"
+   ]
+  },
+  {
+   "id": "QiShengHeLai",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/QiShengHeLai.QiShengHeLai_C",
+   "cat": "mystery",
+   "title": "WHENCE THE WEEPING",
+   "subtitle": "A whisper on the wind, an old name carried by the breeze",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the source of the weeping",
+     "map": "XiGu",
+     "point": "QiShengHeLai_1",
+     "pos": [
+      8048,
+      265300,
+      -33382
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Search the depths of the forest",
+     "map": "FuJiZhiLin",
+     "point": "QiShengHeLai_2",
+     "pos": [
+      19092,
+      151351,
+      -1570
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Reach the Shrine at the summit and find the source of the weeping",
+     "map": "DengDingShanDao",
+     "point": "QiShengHeLai_3",
+     "pos": [
+      -60744,
+      -93761,
+      29349
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Enter the depths beneath the Shrine",
+     "map": "DengDingShanDao",
+     "point": "QiShengHeLai_4",
+     "pos": [
+      -60742,
+      -101340,
+      29256
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Could the Chord be in the northern mountains?",
+     "map": "MeiGuHu",
+     "point": "QiShengHeLai_S1",
+     "pos": [
+      -43008,
+      -11872,
+      817
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "FuJiZhiLin",
+    "DengDingShanDao",
+    "MeiGuHu"
+   ]
+  },
+  {
+   "id": "RenOuZhongShu",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/RenOuZhongShu.RenOuZhongShu_C",
+   "cat": "mystery",
+   "title": "THE HERALD'S ILLUSION",
+   "subtitle": "A twisted dreamscape, forever lost",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Open all three doors leading to the Herald's Illusion",
+     "map": "ZhengDaoDaYing",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "rozs.人偶中枢.从弦者人偶囚室到达人偶中枢",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "rozs.人偶中枢.从陆家村梦差密室到达人偶中枢",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "rozs.人偶中枢.从绝命坑道梦差密室到达人偶中枢",
+       "map": "ZhengDaoDaYing"
+      }
+     ]
+    }
+   ],
+   "region": "ZhengDaoDaYing",
+   "group": "zhengdaodaying"
+  },
+  {
+   "id": "SanMianHunDun",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/SanMianHunDun.SanMianHunDun_C",
+   "cat": "mystery",
+   "title": "TRIPLE THREAT",
+   "subtitle": "Three turbulent souls, one shared prison",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Use Blazing Edge to defeat the Three-Faced Puppet that fled to Mirrorwood.",
+     "map": "FuJiZhiLin",
+     "point": "SanMianHunDun_1",
+     "pos": [
+      18226,
+      153148,
+      -1575
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Learn more about the Three-Faced Puppet",
+     "map": "XiGu",
+     "point": "SanMianHunDun_S1",
+     "pos": [
+      8993,
+      288868,
+      -31288
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Learn the Three-Faced Puppet's identity to strike it down",
+     "map": "XiGu",
+     "point": "SanMianHunDun_S2",
+     "pos": [
+      8993,
+      288868,
+      -31288
+     ]
+    },
+    {
+     "id": "S3",
+     "text": "Search the Mirage Estate for the puppet's remaining Memory Flowers",
+     "map": "XiMeng",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "fjzl.三头魔偶.记忆之花1",
+       "map": "XiMeng"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.三头魔偶.记忆之花2",
+       "map": "XiMeng"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.三头魔偶.记忆之花3",
+       "map": "XiMeng"
+      }
+     ]
+    },
+    {
+     "id": "S4",
+     "text": "Return to Weeping Creek Valley and defeat the Three-Faced Puppet hidden in the Rift within the Lady’s statue.",
+     "map": "XiGu",
+     "point": "SanMianHunDun_S4",
+     "pos": [
+      8993,
+      288868,
+      -31288
+     ]
+    },
+    {
+     "id": "S5",
+     "text": "Make your way to the Mirrorwood Entrance",
+     "map": "FuJiZhiLin",
+     "point": "SanMianHunDun_S5",
+     "pos": [
+      -40552,
+      157501,
+      1703
+     ]
+    },
+    {
+     "id": "S6",
+     "text": "Venture deeper into Mirrorwood",
+     "map": "FuJiZhiLin",
+     "point": "SanMianHunDun_S6",
+     "pos": [
+      18226,
+      153148,
+      -1575
+     ]
+    },
+    {
+     "id": "S7",
+     "text": "What exactly is this \"Three-Faced Puppet\"?",
+     "map": "XiGu",
+     "point": "SanMianHunDun_S7",
+     "pos": [
+      8993,
+      288868,
+      -31288
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "regions": [
+    "FuJiZhiLin",
+    "XiGu",
+    "PangZhen"
+   ],
+   "missables": [
+    "three-faced-puppet"
+   ]
+  },
+  {
+   "id": "XiGuShenChu",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/XiGuShenChu.XiGuShenChu_C",
+   "cat": "mystery",
+   "title": "DEEP IN THE VALLEY",
+   "subtitle": "Fear not the perils that lie ahead",
+   "branches": [
+    {
+     "id": "S1",
+     "text": "Search the top of the Steel Tower for the lost key",
+     "map": "XiGu",
+     "point": "XiGuShenChu_S1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xg.杀气塔前.捡到钥匙"
+      }
+     ],
+     "pos": [
+      -60574,
+      219361,
+      -9103
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Open the outer gate at the base of the tower",
+     "map": "XiGu",
+     "point": "XiGuShenChu_S2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xg.杀气塔前.开门"
+      }
+     ],
+     "pos": [
+      -59843,
+      234235,
+      -20615
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu"
+  },
+  {
+   "id": "XiLouFeiXu",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/XiLouFeiXu.XiLouFeiXu_C",
+   "cat": "mystery",
+   "title": "ALLURE OF VANITY",
+   "subtitle": "Awake, a thousand forms; in dreams, all is empty",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect all the Memory Flowers on Meigu Lake",
+     "map": "MeiGuHu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.6",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.1",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.2",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.3",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.4",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.烟儿的记忆之花.5",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find Yan Qiansui on the island in Meigu Lake",
+     "map": "MeiGuHu",
+     "point": "FuHuaYin_2",
+     "pos": [
+      -125383,
+      73020,
+      1455
+     ]
+    }
+   ],
+   "region": "MeiGuHu",
+   "group": "meiguhu",
+   "entries": [
+    "MeiGuHu:MemoryFlower:10",
+    "MeiGuHu:MemoryFlower:1",
+    "MeiGuHu:MemoryFlower:3",
+    "MeiGuHu:MemoryFlower:15",
+    "MeiGuHu:MemoryFlower:7",
+    "MeiGuHu:MemoryFlower:8"
+   ]
+  },
+  {
+   "id": "XuKongHuanXiang",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/XuKongHuanXiang.XuKongHuanXiang_C",
+   "cat": "mystery",
+   "title": "ILLUSION OF INANIS",
+   "subtitle": "Reunited in the Mist",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Search for the illusion of Inanis",
+     "map": "FuJiZhiLin",
+     "point": "XuKongHuanXiang_1",
+     "pos": [
+      -18495,
+      194473,
+      -800
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin"
+  },
+  {
+   "id": "XueMaiJueXing",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/XueMaiJueXing.XueMaiJueXing_C",
+   "cat": "mystery",
+   "title": "BLOODLINE AWAKENING",
+   "subtitle": "Shackles serve as kindling, destiny ignites",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find all five Lóng Pillars and complete their trials",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算1",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算2",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算3",
+       "map": "XiMeng"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算4",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算5",
+       "map": "MeiGu_YiJi"
+      }
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Return to the Lóng Pillar after new discoveries",
+     "map": "XiGu",
+     "point": "XueMaiJueXing_S1",
+     "pos": [
+      -52358,
+      227134,
+      -20715
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Return to the Lóng Pillar to investigate",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算1",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算2",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算3",
+       "map": "XiMeng"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算4",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算5",
+       "map": "MeiGu_YiJi"
+      }
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "entries": [
+    "XiGu:LongZhu:0",
+    "FuJiZhiLin:LongZhu:0",
+    "XiMeng:LongZhu:0",
+    "MeiGuHu:LongZhu:0",
+    "MeiGu_YiJi:LongZhu:0"
+   ]
+  },
+  {
+   "id": "XueRouHua",
+   "cls": "/Game/PBZstory/PBZQuest/Branch/XueRouHua.XueRouHua_C",
+   "cat": "mystery",
+   "title": "FLESH LILY",
+   "subtitle": "What Nourishes the Flawless Bloom?",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the Flesh Lily for Yu'er",
+     "map": "XiGu",
+     "point": "XueRouHua_1",
+     "pos": [
+      2339,
+      275792,
+      -32340
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Check on Yu'er's Father",
+     "map": "HouJie",
+     "point": "XueRouHua_2",
+     "pos": [
+      -249596,
+      40406,
+      -5732
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "After reaching Pangzhen, return to escort Yu'er home",
+     "map": "PangZhen",
+     "point": "XueRouHua_S1",
+     "pos": [
+      -170269,
+      132345,
+      -5958
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Hand the Flesh Lily to Yu'er",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "fjzl.营地玉儿.到达营地",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "xg.玉儿.传送结束",
+       "map": "FuJiZhiLin"
+      }
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "PangZhen"
+   ],
+   "missables": [
+    "flesh-lily"
+   ],
+   "entries": [
+    "FuJiZhiLin:ShaChiWeapon:1",
+    "FuJiZhiLin:Accessory:2",
+    "XiGu:Accessory:1"
+   ]
+  },
+  {
+   "id": "BaiYing",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/BaiYing.BaiYing_C",
+   "cat": "collect",
+   "title": "WHITESHADOW",
+   "subtitle": "In search of kin through wind and snow",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect the Memory Flowers of the Blizzard Blademaster",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花6",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花1",
+       "map": "MeiGu_YiJi"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花2",
+       "map": "MeiGu_YiJi"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花3",
+       "map": "MeiGu_YiJi"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花4",
+       "map": "MeiGu_YiJi"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.白影.记忆之花5",
+       "map": "MeiGu_YiJi"
+      }
+     ]
+    }
+   ],
+   "entries": [
+    "MeiGuHu:MemoryFlower:18",
+    "MeiGu_YiJi:MemoryFlower:5",
+    "MeiGu_YiJi:MemoryFlower:9",
+    "MeiGu_YiJi:MemoryFlower:8",
+    "MeiGu_YiJi:MemoryFlower:6",
+    "MeiGu_YiJi:MemoryFlower:7"
+   ]
+  },
+  {
+   "id": "JiaoTuSanKu",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/JiaoTuSanKu.JiaoTuSanKu_C",
+   "cat": "collect",
+   "title": "THE WILY HARE'S THREE DENS",
+   "subtitle": "A thousand trails of truth and deception",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find Quick Hand Zhang's hidden treasure in the Crimson Forest",
+     "map": "FuJiZhiLin",
+     "point": "JiaoTuSanKu_1",
+     "pos": [
+      -100711,
+      160221,
+      181
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find Quick Hand Zhang's other hideouts",
+     "map": "FuJiZhiLin",
+     "point": "JiaoTuSanKu_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "jtsk.狡兔三窟.4"
+      },
+      {
+       "type": "tag",
+       "tag": "jtsk.狡兔三窟.1"
+      },
+      {
+       "type": "tag",
+       "tag": "jtsk.狡兔三窟.2"
+      },
+      {
+       "type": "tag",
+       "tag": "jtsk.狡兔三窟.3"
+      },
+      {
+       "type": "tag",
+       "tag": "jtsk.狡兔三窟.5"
+      }
+     ],
+     "pos": [
+      -72014,
+      149171,
+      194
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "missables": [
+    "quick-hand-zhang"
+   ],
+   "entries": [
+    "LuJiaCun:Accessory:1",
+    "MeiGuHu:Medicine:0",
+    "HouJie:ShaChiWeapon:2",
+    "XiMeng:Accessory:2",
+    "FuJiZhiLin:ShaChiWeapon:0",
+    "FuJiZhiLin:Accessory:1"
+   ]
+  },
+  {
+   "id": "LongZhu",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/LongZhu.LongZhu_C",
+   "cat": "collect",
+   "title": "Lóng Pillar",
+   "subtitle": "Anchor Heaven, Seal Corruption",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find and touch the Lóng Pillars hidden throughout the land",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算1",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算2",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算3",
+       "map": "MeiGu_YiJi"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算4",
+       "map": "XiMeng"
+      },
+      {
+       "type": "tag",
+       "tag": "lz.龙柱.龙柱结算5",
+       "map": "MeiGuHu"
+      }
+     ]
+    }
+   ],
+   "entries": [
+    "XiGu:LongZhu:0",
+    "FuJiZhiLin:LongZhu:0",
+    "XiMeng:LongZhu:0",
+    "MeiGuHu:LongZhu:0",
+    "MeiGu_YiJi:LongZhu:0"
+   ]
+  },
+  {
+   "id": "MiaoShouKongKong",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/MiaoShouKongKong.MiaoShouKongKong_C",
+   "cat": "collect",
+   "title": "QUICK HAND'S REQUEST",
+   "subtitle": "A hidden treasure awaits",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect all the treasures in the Crimson Forest",
+     "map": "FuJiZhiLin",
+     "point": "MiaoShouKongKong_1-1",
+     "pos": [
+      -72014,
+      149171,
+      194
+     ],
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "fjzl.小张收集物.3"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.小张收集物.1"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.小张收集物.2"
+      }
+     ]
+    },
+    {
+     "id": "1-1",
+     "text": "Deliver all the treasures from the Crimson Forest to Quick Hand Zhang",
+     "map": "FuJiZhiLin",
+     "tasks": [
+      {
+       "type": "point",
+       "map": "XiMeng"
+      },
+      {
+       "type": "point",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "point",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "point",
+       "map": "HouJie"
+      },
+      {
+       "type": "point",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Collect all the treasures in the Village of Lu",
+     "map": "LuJiaCun",
+     "point": "MiaoShouKongKong_3-1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ljc.小张收集物.3"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.小张收集物.1"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.小张收集物.2"
+      }
+     ],
+     "pos": [
+      -59517,
+      124187,
+      -1908
+     ]
+    },
+    {
+     "id": "3-1",
+     "text": "Deliver all the treasures from the Village of Lu to Quick Hand Zhang",
+     "map": "LuJiaCun",
+     "tasks": [
+      {
+       "type": "point",
+       "map": "XiMeng"
+      },
+      {
+       "type": "point",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "point",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "point",
+       "map": "HouJie"
+      },
+      {
+       "type": "point",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Collect all the treasures in Pangzhen",
+     "map": "PangZhen",
+     "point": "MiaoShouKongKong_4-1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.小张收集物.4"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.小张收集物.1"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.小张收集物.2"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.小张收集物.3"
+      }
+     ],
+     "pos": [
+      -210538,
+      120969,
+      -3866
+     ]
+    },
+    {
+     "id": "4-1",
+     "text": "Deliver all the treasures from Pangzhen to Quick Hand Zhang",
+     "map": "HouJie",
+     "tasks": [
+      {
+       "type": "point",
+       "map": "XiMeng"
+      },
+      {
+       "type": "point",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "point",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "point",
+       "map": "HouJie"
+      },
+      {
+       "type": "point",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Collect all the treasures in Meigu Lake",
+     "map": "MeiGuHu",
+     "point": "MiaoShouKongKong_5-1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "mgxl.小张收集物.3"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.小张收集物.1"
+      },
+      {
+       "type": "tag",
+       "tag": "mgxl.小张收集物.2"
+      }
+     ],
+     "pos": [
+      -130241,
+      32396,
+      1535
+     ]
+    },
+    {
+     "id": "5-1",
+     "text": "Deliver all the treasures from Meigu Lake to Quick Hand Zhang",
+     "map": "MeiGuHu",
+     "tasks": [
+      {
+       "type": "point",
+       "map": "XiMeng"
+      },
+      {
+       "type": "point",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "point",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "point",
+       "map": "HouJie"
+      },
+      {
+       "type": "point",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "text": "Collect all the treasures in Mirage Estate",
+     "map": "XiMeng",
+     "point": "MiaoShouKongKong_6-1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xsd.小张收集物.1"
+      },
+      {
+       "type": "tag",
+       "tag": "xsd.小张收集物.2"
+      },
+      {
+       "type": "tag",
+       "tag": "xsd.小张收集物.3"
+      }
+     ],
+     "pos": [
+      -205157,
+      61615,
+      7031
+     ]
+    },
+    {
+     "id": "6-1",
+     "text": "Deliver all the treasures from Mirage Estate to Quick Hand Zhang",
+     "map": "XiMeng",
+     "tasks": [
+      {
+       "type": "point",
+       "map": "XiMeng"
+      },
+      {
+       "type": "point",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "point",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "point",
+       "map": "HouJie"
+      },
+      {
+       "type": "point",
+       "map": "MeiGuHu"
+      }
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "regions": [
+    "FuJiZhiLin",
+    "LuJiaCun",
+    "PangZhen",
+    "MeiGuHu"
+   ],
+   "missables": [
+    "quick-hand-zhang",
+    "thundermoon"
+   ],
+   "entries": [
+    "FuJiZhiLin:ShaChiWeapon:0",
+    "FuJiZhiLin:Accessory:1",
+    "LuJiaCun:Accessory:1",
+    "HouJie:ShaChiWeapon:2",
+    "MeiGuHu:Medicine:0",
+    "XiMeng:Accessory:2"
+   ]
+  },
+  {
+   "id": "QiXingJianZhen",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/QiXingJianZhen.QiXingJianZhen_C",
+   "cat": "collect",
+   "title": "THE SEVEN-STARS FORMATION",
+   "subtitle": "Together through fire and water",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect the Memory Flowers of the Seven-Stars Disciples",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.7",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.2",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.3",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.4",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.5",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "zddy.七星剑阵记忆之花.6",
+       "map": "ZhengDaoDaYing"
+      }
+     ]
+    }
+   ],
+   "entries": [
+    "ZhengDaoDaYing:MemoryFlower:1",
+    "ZhengDaoDaYing:MemoryFlower:16",
+    "ZhengDaoDaYing:MemoryFlower:0",
+    "ZhengDaoDaYing:MemoryFlower:14",
+    "ZhengDaoDaYing:MemoryFlower:15",
+    "ZhengDaoDaYing:MemoryFlower:2"
+   ]
+  },
+  {
+   "id": "RongShuZhiXin",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/RongShuZhiXin.RongShuZhiXin_C",
+   "cat": "collect",
+   "title": "HEART OF THE BANYAN",
+   "subtitle": "Blood miasma & twisted branches",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the Human-Faced Banyan Trees",
+     "map": "FuJiZhiLin",
+     "point": "RongShuZhiXin_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "rszx.榕树之心.完成挑战1",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "rszx.榕树之心.完成挑战2",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "rszx.榕树之心.完成挑战3",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "rszx.榕树之心.完成挑战4",
+       "map": "MeiGuHu"
+      },
+      {
+       "type": "tag",
+       "tag": "rszx.榕树之心.完成挑战5",
+       "map": "DengDingShanDao"
+      }
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "entries": [
+    "FuJiZhiLin:RongShu:0",
+    "ZhengDaoDaYing:RongShu:0",
+    "HouJie:RongShu:0",
+    "MeiGuHu:RongShu:0",
+    "DengDingShanDao:RongShu:0"
+   ]
+  },
+  {
+   "id": "ShaoZhu",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/ShaoZhu.ShaoZhu_C",
+   "cat": "collect",
+   "title": "YOUNG MISTRESS",
+   "subtitle": "Even a fledgling blade can be honed",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Examine the ribbon left by Mu Xiaokui",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ljc.沐小葵.获得丝带4",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.沐小葵.获得丝带1",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.沐小葵.获得丝带2",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.沐小葵.获得丝带3",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.沐小葵.获得丝带5",
+       "map": "LuJiaCun"
+      }
+     ]
+    }
+   ],
+   "missables": [
+    "mu-xiaokui"
+   ]
+  },
+  {
+   "id": "WuShiZunZhu",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/WuShiZunZhu.WuShiZunZhu_C",
+   "cat": "collect",
+   "title": "LION DANCE GRANDMASTER",
+   "subtitle": "Night falls as the war drums fade",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect the Memory Flowers of the Lion Dance Grandmaster",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花6",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花1",
+       "map": "PangZhen"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花2",
+       "map": "PangZhen"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花3",
+       "map": "PangZhen"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花4",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.舞狮尊主.记忆之花5",
+       "map": "HouJie"
+      }
+     ]
+    }
+   ],
+   "entries": [
+    "HouJie:MemoryFlower:0",
+    "PangZhen:MemoryFlower:2",
+    "PangZhen:MemoryFlower:3",
+    "PangZhen:MemoryFlower:0",
+    "HouJie:MemoryFlower:2",
+    "HouJie:MemoryFlower:13"
+   ]
+  },
+  {
+   "id": "XianYin",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/XianYin.XianYin_C",
+   "cat": "collect",
+   "title": "RESONANT STRINGS",
+   "subtitle": "A familiar melody returns",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect Memory Flowers of Inanis and the Chord",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花6",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花1",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花2",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花3",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花4",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.弦音.记忆之花5",
+       "map": "FuJiZhiLin"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ZhengYiMengChen",
+   "cls": "/Game/PBZstory/PBZQuest/Collect/ZhengYiMengChen.ZhengYiMengChen_C",
+   "cat": "collect",
+   "title": "JUSTICE TARNISHED",
+   "subtitle": "Once a Swordsman of Kunlun",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect the Memory Flowers of Huangxing",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花6",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花1",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花2",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花3",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花4",
+       "map": "DengDingShanDao"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.正义蒙尘.记忆之花5",
+       "map": "DengDingShanDao"
+      }
+     ]
+    }
+   ],
+   "entries": [
+    "DengDingShanDao:MemoryFlower:2",
+    "DengDingShanDao:MemoryFlower:3",
+    "DengDingShanDao:MemoryFlower:4",
+    "DengDingShanDao:MemoryFlower:1",
+    "DengDingShanDao:MemoryFlower:5",
+    "DengDingShanDao:MemoryFlower:0"
+   ]
+  },
+  {
+   "id": "Demo-ZDDY",
+   "cls": "/Game/PBZstory/PBZQuest/Demo/ZDDY/Demo-ZDDY.Demo-ZDDY_C",
+   "cat": "other",
+   "title": "MANDATE ENCAMPMENT",
+   "unused": true,
+   "branches": [
+    {
+     "id": "1",
+     "text": "Reach the main gate of the Mandate Encampment",
+     "map": "ZhengDaoDaYing",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "zddy.运镜.获得金瓜后"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Venture Deeper into the Mandate Encampment",
+     "map": "ZhengDaoDaYing",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "zddy.剑阵.下楼梯"
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "text": "COMPLETE",
+     "map": "ZhengDaoDaYing"
+    }
+   ],
+   "region": "ZhengDaoDaYing",
+   "group": "zhengdaodaying",
+   "entries": [
+    "ZhengDaoDaYing:ShaChiWeapon:0"
+   ]
+  },
+  {
+   "id": "MainCh1-2-GangTieJuTa",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh1-2-GangTieJuTa.MainCh1-2-GangTieJuTa_C",
+   "cat": "story",
+   "title": "STEEL AND STEAM",
+   "subtitle": "An iron curtain falls, its shadow blotting out the sun",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Enter the Steel Tower and find a way to the Hunt's hideout",
+     "map": "XiGu",
+     "point": "MainCh1-2-GangTieJuTa_1",
+     "pos": [
+      -54785,
+      208217,
+      -17000
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Settle the score with the Hunt!",
+     "map": "XiGu",
+     "point": "MainCh1-2-GangTieJuTa_2",
+     "pos": [
+      -65430,
+      194394,
+      -17561
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Pass through the cave behind the waterfall",
+     "map": "XiGu",
+     "point": "MainCh1-2-GangTieJuTa_3",
+     "pos": [
+      -63542,
+      177873,
+      -12375
+     ],
+     "posMap": "FuJiZhiLin"
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu"
+  },
+  {
+   "id": "MainCh1-LinZhongShaJi",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh1-LinZhongShaJi.MainCh1-LinZhongShaJi_C",
+   "cat": "story",
+   "title": "SNAKE'S REFLECTION",
+   "subtitle": "When the cicadas fall silent, a blade is already at your throat",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Follow the main road through the forest to Pangzhen",
+     "map": "FuJiZhiLin",
+     "point": "MainCh1-LinZhongShaJi_1",
+     "pos": [
+      -135837,
+      169970,
+      -1388
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find another way into Pangzhen",
+     "map": "FuJiZhiLin",
+     "point": "MainCh1-LinZhongShaJi_2",
+     "pos": [
+      -135760,
+      169903,
+      -2386
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Cross the Crimson Forest and reach the Village of Lu",
+     "map": "LuJiaCun",
+     "point": "MainCh1-LinZhongShaJi_3",
+     "pos": [
+      18226,
+      153148,
+      -1575
+     ],
+     "posMap": "FuJiZhiLin"
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "regions": [
+    "FuJiZhiLin",
+    "LuJiaCun"
+   ]
+  },
+  {
+   "id": "MainCh1-NiLiuErShang",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh1-NiLiuErShang.MainCh1-NiLiuErShang_C",
+   "cat": "story",
+   "title": "AGAINST THE FLOW",
+   "subtitle": "Those who go against the current never seek a way back",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Follow the path upstream",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_1",
+     "pos": [
+      2339,
+      275792,
+      -32340
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find the Great Waterfall",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_2",
+     "pos": [
+      -63218,
+      258069,
+      -21919
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Continue searching for the Great Waterfall",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_3",
+     "pos": [
+      -65757,
+      194955,
+      -17063
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Report to the guard by the broken wall",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_S1",
+     "pos": [
+      -29559,
+      264601,
+      -25001
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Enter the outpost held by the Mandate",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_S2",
+     "pos": [
+      -29314,
+      265527,
+      -25149
+     ]
+    },
+    {
+     "id": "S3",
+     "text": "Break the Chain Barrier with the Dread Axe and continue on",
+     "map": "XiGu",
+     "point": "MainCh1-NiLiuErShang_S3",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xg.斧老大.劈开铁链"
+      }
+     ],
+     "pos": [
+      -54666,
+      257269,
+      -24396
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu"
+  },
+  {
+   "id": "MainCh1-ShiXinCun",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh1-ShiXinCun.MainCh1-ShiXinCun_C",
+   "cat": "story",
+   "title": "HEARTLESS REMNANTS",
+   "subtitle": "The heartless cannot die; those with a heart cannot live",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the Smuggler's Tunnel in the Village of Lu",
+     "map": "LuJiaCun",
+     "point": "MainCh1-ShiXinCun_1",
+     "pos": [
+      -38660,
+      126171,
+      -3317
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Enter the well",
+     "map": "LuJiaCun",
+     "point": "MainCh1-ShiXinCun_2",
+     "pos": [
+      -46986,
+      124681,
+      -2760
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Use the lift",
+     "map": "LuJiaCun",
+     "point": "MainCh1-ShiXinCun_3",
+     "pos": [
+      -65146,
+      84421,
+      -5452
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Use the eyeball to unlock Puppet No. 44",
+     "map": "LuJiaCun",
+     "point": "MainCh1-ShiXinCun_4",
+     "pos": [
+      -66628,
+      87306,
+      -5670
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Enter Pangzhen",
+     "map": "LuJiaCun",
+     "point": "MainCh1-ShiXinCun_5",
+     "pos": [
+      -64876,
+      112207,
+      -1036
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find the bodies of the three masters and lay them to rest",
+     "map": "LuJiaCun",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "bsmw.掌门本体.已解脱3",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "bsmw.掌门本体.已解脱1",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "bsmw.掌门本体.已解脱2",
+       "map": "LuJiaCun"
+      }
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "entries": [
+    "LuJiaCun:MemoryFlower:14",
+    "LuJiaCun:MemoryFlower:4",
+    "LuJiaCun:ShaChiWeapon:0",
+    "LuJiaCun:MemoryFlower:6",
+    "LuJiaCun:Weapon:2"
+   ]
+  },
+  {
+   "id": "MainCh2-SiDaSheWu",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh2-SiDaSheWu.MainCh2-SiDaSheWu_C",
+   "cat": "story",
+   "title": "THE FOUR SERPENT HOUSES",
+   "subtitle": "Green, red, black, and white, each with its own secret remedy",
+   "branches": [
+    {
+     "id": "2",
+     "text": "Find the Serpent Eye, Tongue, and Fang",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xssl.雕像.蛇牙",
+       "map": "LuJiaCun"
+      },
+      {
+       "type": "tag",
+       "tag": "xssl.雕像.蛇信",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "xssl.雕像.蛇眼",
+       "map": "MeiGuHu"
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Activate the serpent mechanism within the Green Serpent House",
+     "map": "HouJie",
+     "point": "MainCh2-SiDaSheWu_5",
+     "pos": [
+      -254845,
+      75975,
+      -5456
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find a weapon capable of burning through brambles"
+    },
+    {
+     "id": "S3",
+     "text": "Search the Green Serpent House for clues to the other Serpent Houses",
+     "map": "HouJie",
+     "point": "MainCh2-SiDaSheWu_S3",
+     "pos": [
+      -255320,
+      75326,
+      -4875
+     ]
+    },
+    {
+     "id": "S4",
+     "text": "Use the Loong Emblem to unlock the White Serpent House",
+     "map": "MeiGuHu",
+     "point": "MainCh2-SiDaSheWu_S4",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xssl.龙形令牌.开门"
+      }
+     ],
+     "pos": [
+      -51854,
+      15525,
+      2547
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "regions": [
+    "PangZhen",
+    "MeiGuHu"
+   ]
+  },
+  {
+   "id": "MainCh2-SiZhen",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh2-SiZhen.MainCh2-SiZhen_C",
+   "cat": "story",
+   "title": "TOWN OF DEATH",
+   "subtitle": "The dusk of unanswered doors",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find a way to the backstreet",
+     "map": "PangZhen",
+     "point": "MainCh2-SiZhen_1",
+     "pos": [
+      -203741,
+      134447,
+      -5952
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Enter the Order's underground tavern",
+     "map": "PangZhen",
+     "point": "MainCh2-SiZhen_2",
+     "pos": [
+      -189802,
+      116704,
+      -4482
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Pass through the tavern's passage into the backstreet",
+     "map": "PangZhen",
+     "point": "MainCh2-SiZhen_3",
+     "pos": [
+      -203741,
+      134447,
+      -5952
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Enter the central area of Pangzhen",
+     "map": "PangZhen",
+     "point": "MainCh2-SiZhen_4",
+     "pos": [
+      -170269,
+      132345,
+      -5958
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen"
+  },
+  {
+   "id": "MainCh2-XinZhiZongJi",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh2-XinZhiZongJi.MainCh2-XinZhiZongJi_C",
+   "cat": "story",
+   "title": "THE HEART'S TRAIL",
+   "subtitle": "A lonely lamp in a silent town",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Visit Yu'er's home in the backstreets of Pangzhen",
+     "map": "HouJie",
+     "point": "MainCh2-XinZhiZongJi_1",
+     "pos": [
+      -248896,
+      42037,
+      -5736
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Visit Lei Dang at Jingyang Hall",
+     "map": "PangZhen",
+     "point": "MainCh2-XinZhiZongJi_3",
+     "pos": [
+      -181673,
+      139204,
+      -5732
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Ask Lei Dang to repair the Flaming Mane",
+     "map": "PangZhen",
+     "point": "MainCh2-XinZhiZongJi_4",
+     "pos": [
+      -184169,
+      142122,
+      -5544
+     ]
+    },
+    {
+     "id": "6",
+     "text": "Open the Lion Dance Hall gate",
+     "map": "HouJie",
+     "point": "MainCh2-XinZhiZongJi_6",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.舞狮.打开大门"
+      }
+     ],
+     "pos": [
+      -270898,
+      59943,
+      -5916
+     ]
+    },
+    {
+     "id": "7",
+     "text": "Venture deeper into the Lion Dance Hall and seek out the Lion Dance Grandmaster.",
+     "map": "HouJie",
+     "point": "MainCh2-XinZhiZongJi_7",
+     "pos": [
+      -273342,
+      43426,
+      -3379
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Find the way into the Mirage Estate",
+     "map": "PangZhen",
+     "point": "MainCh2-XinZhiZongJi_S2",
+     "pos": [
+      -193443,
+      105675,
+      667
+     ]
+    },
+    {
+     "id": "S5",
+     "text": "Enter the Mirage Estate through the hidden passage in the Green Serpent House",
+     "map": "HouJie",
+     "point": "MainCh2-XinZhiZongJi_S5",
+     "pos": [
+      -254845,
+      75975,
+      -5456
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen"
+  },
+  {
+   "id": "MainCh3-DieXueZhiLu",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh3-DieXueZhiLu.MainCh3-DieXueZhiLu_C",
+   "cat": "story",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "MainCh3-LongYuZuo",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh3-LongYuZuo.MainCh3-LongYuZuo_C",
+   "cat": "story",
+   "title": "A SOUL'S WORTH",
+   "subtitle": "The Loong's roar beneath the abyss",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Reach Soulrend Cliff",
+     "map": "DuanHunYa",
+     "point": "MainCh3-LongYuZuo",
+     "pos": [
+      -193793,
+      -113689,
+      64120
+     ]
+    }
+   ],
+   "region": "DuanHunShan",
+   "group": "duanhunshan"
+  },
+  {
+   "id": "MainCh3-PoJu",
+   "cls": "/Game/PBZstory/PBZQuest/Main/MainCh3-PoJu.MainCh3-PoJu_C",
+   "cat": "story",
+   "title": "THE WAY FORWARD",
+   "subtitle": "The only path to survival often lies within a dead end",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Enter the Mirage Estate",
+     "map": "HouJie",
+     "point": "MainCh3-PoJu_1",
+     "pos": [
+      -245242,
+      75127,
+      -2764
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Search for the Perfect Vessel where the Radiant Heart lies",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_2",
+     "pos": [
+      -210102,
+      59149,
+      9317
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Travel to Soulrend Mountain",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_3",
+     "pos": [
+      -213507,
+      60187,
+      7907
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find the \"Opera Ticket\"",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_S1",
+     "pos": [
+      -189458,
+      91316,
+      4003
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Use the Opera Ticket to unlock the Opera House",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_S2",
+     "pos": [
+      -182830,
+      71505,
+      7059
+     ]
+    },
+    {
+     "id": "S3",
+     "text": "Continue until you find a wall you can blast open",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_S3",
+     "pos": [
+      -210260,
+      69578,
+      6990
+     ]
+    },
+    {
+     "id": "S4",
+     "text": "Blast through the wall with the Tiger Cannon",
+     "map": "XiMeng",
+     "point": "MainCh3-PoJu_S4",
+     "pos": [
+      -210260,
+      69578,
+      6990
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen"
+  },
+  {
+   "id": "MemoryFlower",
+   "cls": "/Game/PBZstory/PBZQuest/Quest_Branchline/MemoryFlower.MemoryFlower_C",
+   "cat": "other",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "BaiShanMiWen",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/BaiShanMiWen.BaiShanMiWen_C",
+   "cat": "tale",
+   "title": "SECRETS OF THE BAISHAN SECT",
+   "subtitle": "Snow conceals, thaw reveals",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Search the Mandate Encampment for the Baishan Sect Leader",
+     "map": "ZhengDaoDaYing",
+     "point": "BaiShanMiWen_1",
+     "pos": [
+      66070,
+      67437,
+      12203
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Examine Bi Taotao's body",
+     "map": "ZhengDaoDaYing",
+     "point": "BaiShanMiWen_2",
+     "pos": [
+      56113,
+      68058,
+      14315
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Defeat Bi Taotao's puppet form",
+     "map": "ZhengDaoDaYing",
+     "point": "BaiShanMiWen_3",
+     "pos": [
+      28697,
+      56370,
+      6278
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find Junior Sister Meng at the mountain lodge",
+     "map": "FuJiZhiLin",
+     "point": "BaiShanMiWen_S1",
+     "pos": [
+      -46782,
+      146149,
+      -455
+     ]
+    }
+   ],
+   "region": "ZhengDaoDaYing",
+   "group": "zhengdaodaying",
+   "regions": [
+    "ZhengDaoDaYing",
+    "FuJiZhiLin"
+   ],
+   "missables": [
+    "broken-vessel"
+   ]
+  },
+  {
+   "id": "BaiTouKe",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/BaiTouKe.BaiTouKe_C",
+   "cat": "tale",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "BaiXue",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/BaiXue.BaiXue_C",
+   "cat": "tale",
+   "title": "BAI XUE",
+   "subtitle": "An old love, forever changed",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Speak to the female puppet beside Chen Zhu",
+     "details": "Chen Zhu, the Maskwalker searching for the list, left behind an old necklace after you defeated him. It seems to have restored some awareness to the female puppet at his side... Go check on her.",
+     "map": "DengDingShanDao",
+     "point": "BaiXue_1",
+     "pos": [
+      -53651,
+      -75420,
+      25632
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find Bai Xue's body on Pangzhen's backstreet",
+     "map": "HouJie",
+     "point": "BaiXue_2",
+     "pos": [
+      -256972,
+      90217,
+      -1902
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Search the base of the large tree by the backstreet well in Pangzhen",
+     "map": "HouJie",
+     "point": "BaiXue_3",
+     "pos": [
+      -256219,
+      94372,
+      -1570
+     ]
+    }
+   ],
+   "region": "DengDingShanDao",
+   "group": "dengdingshandao",
+   "regions": [
+    "DengDingShanDao",
+    "PangZhen"
+   ]
+  },
+  {
+   "id": "BuMieXiaDan",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/BuMieXiaDan.BuMieXiaDan_C",
+   "cat": "tale",
+   "title": "THE UNDYING HEROIC SPIRIT",
+   "subtitle": "Should heaven fall, I will rise. Should earth break, I will stand",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Free the struggling masters of the Mandate, and honor their undying spirit",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度6",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度1",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度2",
+       "map": "HouJie"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度3",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度4",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.不灭侠胆.任务进度5",
+       "map": "ZhengDaoDaYing"
+      }
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Meet the Seven-star Formation leader, then speak with Wolf Leader at the Order's Tavern",
+     "map": "PangZhen",
+     "point": "BuMieXiaDan_S1",
+     "pos": [
+      -193426,
+      125452,
+      -4007
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "missables": [
+    "heros-courage"
+   ],
+   "entries": [
+    "ZhengDaoDaYing:MemoryFlower:5",
+    "HouJie:MemoryFlower:5",
+    "ZhengDaoDaYing:MemoryFlower:11",
+    "ZhengDaoDaYing:MemoryFlower:4",
+    "ZhengDaoDaYing:MemoryFlower:12",
+    "HouJie:MemoryFlower:12"
+   ]
+  },
+  {
+   "id": "CanCunZhiWu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/CanCunZhiWu.CanCunZhiWu_C",
+   "cat": "tale",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "CiMuXin",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/CiMuXin.CiMuXin_C",
+   "cat": "tale",
+   "title": "A MOTHER'S HEART",
+   "subtitle": "A crow returns its mother's care, a wanderer repays Spring's warmth",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Discover the whereabouts of the woman's son",
+     "map": "HouJie",
+     "point": "CiMuXin_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.慈母心.完成任务"
+      }
+     ],
+     "pos": [
+      -262522,
+      107649,
+      -7672
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "entries": [
+    "HouJie:MemoryFlower:7",
+    "HouJie:Medicine:1"
+   ]
+  },
+  {
+   "id": "DaHuang",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/DaHuang.DaHuang_C",
+   "cat": "tale",
+   "title": "DAHUANG",
+   "subtitle": "The loyal companion, lost in the wilds",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the missing hound",
+     "map": "LuJiaCun",
+     "point": "DaHuang_1",
+     "pos": [
+      -38381,
+      108469,
+      686
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun"
+  },
+  {
+   "id": "DaoJianFoXin",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/DaoJianFoXin.DaoJianFoXin_C",
+   "cat": "tale",
+   "title": "THE SWORD AND THE WAY",
+   "subtitle": "The mortal world is the path of cultivation",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the Bronze Essence at the blacksmith's shop on Pangzhen Backstreet",
+     "map": "HouJie",
+     "point": "DaoJianFoXin_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.毕狄.已拾取"
+      }
+     ],
+     "pos": [
+      -251612,
+      70761,
+      -4868
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Soul Temper the Tianxuan Bronze Sword using Bronze Essence",
+     "map": "PangZhen",
+     "point": "DaoJianFoXin_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.毕狄.已铸魂"
+      }
+     ],
+     "pos": [
+      -189095,
+      122958,
+      -3901
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Speak with Daoist Bidi at the Order's Tavern",
+     "map": "PangZhen",
+     "point": "DaoJianFoXin_3",
+     "pos": [
+      -188827,
+      122606,
+      -3796
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen"
+  },
+  {
+   "id": "DaoYiYouDao",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/DaoYiYouDao.DaoYiYouDao_C",
+   "cat": "tale",
+   "title": "HONOR AMONG THIEVES",
+   "subtitle": "Taken from the night, returned at dawn",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Deliver the Nimble Thief's blood letter to his brother, the Gentle Thief",
+     "map": "FuJiZhiLin",
+     "point": "DaoYiYouDao_1",
+     "pos": [
+      -70288,
+      158979,
+      -459
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "missables": [
+    "honor-among-thieves"
+   ]
+  },
+  {
+   "id": "DuanZhi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/DuanZhi.DuanZhi_C",
+   "cat": "tale",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "FangKuai",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/FangKuai.FangKuai_C",
+   "cat": "tale",
+   "title": "THE CUBE",
+   "subtitle": "An item not of this world",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Speak with Myst to learn more about the cube",
+     "map": "PangZhen",
+     "point": "FangKuai_1",
+     "pos": [
+      -189095,
+      122958,
+      -3901
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find the fisherman's two missing companions on Meigu Lake",
+     "map": "MeiGuHu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.渔夫.获得方块2"
+      },
+      {
+       "type": "tag",
+       "tag": "pz.渔夫.获得方块1"
+      }
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Return to the tavern and tell the fisherman what became of his companions",
+     "map": "PangZhen",
+     "point": "FangKuai_S2",
+     "pos": [
+      -192632,
+      119441,
+      -3839
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "regions": [
+    "PangZhen",
+    "MeiGuHu"
+   ]
+  },
+  {
+   "id": "FengChe",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/FengChe.FengChe_C",
+   "cat": "tale",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "GeJueXieZi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/GeJueXieZi.GeJueXieZi_C",
+   "cat": "tale",
+   "title": "A SEVERED MINDSEAL",
+   "subtitle": "Flesh forged from clouds, ten-thousand miles along the wind",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find a Primal Stone in Weeping Creek Valley for the friendly Shadow Warden",
+     "map": "XiGu",
+     "point": "GeJueXieZi_1",
+     "pos": [
+      -62726,
+      218125,
+      -15414
+     ]
+    },
+    {
+     "id": "1-1",
+     "text": "Give the Primal Stone to the friendly Shadow Warden in Weeping Creek Valley",
+     "map": "XiGu",
+     "point": "GeJueXieZi_1-1",
+     "pos": [
+      -65112,
+      218529,
+      -10938
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find a Primal Stone in Pangzhen for the friendly Shadow Warden",
+     "map": "MeiGuHu",
+     "point": "GeJueXieZi_2",
+     "pos": [
+      -174993,
+      75313,
+      10197
+     ]
+    },
+    {
+     "id": "2-1",
+     "text": "Give the Primal Stone to the friendly Shadow Warden in Pangzhen",
+     "map": "MeiGuHu",
+     "point": "GeJueXieZi_2-1",
+     "pos": [
+      -174993,
+      75313,
+      10197
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Find a Primal Stone in the Crimson Forest for the friendly Shadow Warden",
+     "map": "FuJiZhiLin",
+     "point": "GeJueXieZi_3",
+     "pos": [
+      -45112,
+      176873,
+      6212
+     ]
+    },
+    {
+     "id": "3-1",
+     "text": "Give the Primal Stone to the friendly Shadow Warden in the Crimson Forest",
+     "map": "FuJiZhiLin",
+     "point": "GeJueXieZi_3-1",
+     "pos": [
+      -45112,
+      176873,
+      6212
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Meet the friendly Shadow Warden again",
+     "map": "MeiGuHu",
+     "point": "GeJueXieZi_S1",
+     "pos": [
+      -174993,
+      75313,
+      10197
+     ]
+    },
+    {
+     "id": "S2",
+     "text": "Meet Spectral Blade again",
+     "map": "FuJiZhiLin",
+     "point": "GeJueXieZi_S2",
+     "pos": [
+      -45112,
+      176873,
+      6212
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "MeiGuHu",
+    "FuJiZhiLin"
+   ],
+   "missables": [
+    "spectral-blade"
+   ]
+  },
+  {
+   "id": "GuiTu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/GuiTu.GuiTu_C",
+   "cat": "tale",
+   "title": "THE JOURNEY HOME",
+   "subtitle": "Though this path leads to eternal ruin",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Clear the Smuggler's Tunnel, then return to Old Man Gen",
+     "map": "LuJiaCun",
+     "point": "GuiTu_1",
+     "pos": [
+      -66628,
+      87306,
+      -5670
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Return to Village of Lu and tell Old Man Gen about the passage",
+     "map": "LuJiaCun",
+     "point": "GuiTu_2",
+     "pos": [
+      -23868,
+      126584,
+      -3398
+     ]
+    },
+    {
+     "id": "3-A",
+     "text": "Find Old Man Gen's old house in Pangzhen's backstreets and learn his wife's whereabouts.",
+     "map": "HouJie",
+     "point": "GuiTu_3-A",
+     "pos": [
+      -265677,
+      94414,
+      -4365
+     ]
+    },
+    {
+     "id": "3-B",
+     "text": "Find Old Man Gen in Pangzhen",
+     "map": "LuJiaCun",
+     "point": "GuiTu_3-B",
+     "pos": [
+      -23868,
+      126584,
+      -3398
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Give the Wooden Comb to Old Man Gen at the Village of Lu Gate",
+     "map": "LuJiaCun",
+     "point": "GuiTu_4",
+     "pos": [
+      -23868,
+      126584,
+      -3398
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "regions": [
+    "LuJiaCun",
+    "PangZhen"
+   ],
+   "missables": [
+    "war-wagon"
+   ]
+  },
+  {
+   "id": "JianXiYiShi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/JianXiYiShi.JianXiYiShi_C",
+   "cat": "tale",
+   "title": "APPRENTICE HEALER",
+   "subtitle": "The Path of Healing Begins Here",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the three herbs listed in Yu'er's medicinal recipe in Weeping Creek Valley",
+     "map": "XiGu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "xg.营地玉儿.药材3",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "xg.营地玉儿.药材1",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "xg.营地玉儿.药材2",
+       "map": "XiGu"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Bring the three herbs to Yu'er",
+     "map": "XiGu",
+     "point": "JianXiYiShi_2",
+     "pos": [
+      -39708,
+      266757,
+      -24991
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "missables": [
+    "medicine-case"
+   ],
+   "entries": [
+    "XiGu:Accessory:1"
+   ]
+  },
+  {
+   "id": "JiangHuRenShi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/JiangHuRenShi.JiangHuRenShi_C",
+   "cat": "tale",
+   "title": "THE BROAD SABER",
+   "subtitle": "The blade is drawn, the sheath demands blood",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Return to the Wulin fighter after defeating the Old Commander",
+     "map": "DengDingShanDao",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.江湖人士.完成任务",
+       "map": "DengDingShanDao"
+      }
+     ]
+    }
+   ],
+   "region": "DengDingShanDao",
+   "group": "dengdingshandao"
+  },
+  {
+   "id": "JiuSiFuShang",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/JiuSiFuShang.JiuSiFuShang_C",
+   "cat": "tale",
+   "title": "A HEALER'S MERCY",
+   "subtitle": "A healer's hands, a sacred trust",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Go to the location marked in Record of the Lost Thieves and treat their wounds",
+     "map": "FuJiZhiLin",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "fjzl.救死扶伤.救飞贼4",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.救死扶伤.救飞贼1",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.救死扶伤.救飞贼2",
+       "map": "FuJiZhiLin"
+      },
+      {
+       "type": "tag",
+       "tag": "fjzl.救死扶伤.救飞贼3",
+       "map": "FuJiZhiLin"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Inform Yu'er that the thieves have been found and treated",
+     "map": "FuJiZhiLin",
+     "point": "JiuSiFuShang_2",
+     "pos": [
+      -70639,
+      156187,
+      -315
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin",
+   "missables": [
+    "healers-mercy"
+   ]
+  },
+  {
+   "id": "LanJiaGongZi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/LanJiaGongZi.LanJiaGongZi_C",
+   "cat": "tale",
+   "title": "YOUNG MASTER LAN",
+   "subtitle": "A carefree surface, a mind of hidden depths",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Return to Lan Shaodi after clearing the Smuggler's Tunnel",
+     "map": "LuJiaCun",
+     "point": "LanJiaGongZi_1",
+     "pos": [
+      -66628,
+      87306,
+      -5670
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Tell Lan Shaodi that the path is clear",
+     "map": "LuJiaCun",
+     "point": "LanJiaGongZi_2",
+     "pos": [
+      -24939,
+      136228,
+      -3502
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Meet Lan Shaodi at his manor in Pangzhen",
+     "map": "PangZhen",
+     "point": "LanJiaGongZi_3",
+     "pos": [
+      -177272,
+      112772,
+      -2936
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Touch any bell, then return to the Lan Manor to investigate.",
+     "map": "PangZhen",
+     "point": "LanJiaGongZi_4",
+     "pos": [
+      -177272,
+      112772,
+      -2936
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Go to the Lan Manor and discuss matters with Lan Shaodi",
+     "map": "PangZhen",
+     "point": "LanJiaGongZi_5",
+     "pos": [
+      -177031,
+      113004,
+      -2868
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "regions": [
+    "LuJiaCun",
+    "PangZhen"
+   ]
+  },
+  {
+   "id": "LiuYi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/LiuYi.LiuYi_C",
+   "cat": "tale",
+   "title": "HERO'S LAMENT",
+   "subtitle": "Fearless amid clashing blades, guiltless before Heaven and Earth",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find Moji's relic",
+     "map": "DengDingShanDao",
+     "point": "LiuYi_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.获得物品.墨机子残剑"
+      }
+     ],
+     "pos": [
+      -66472,
+      -68271,
+      19523
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Bring Moji's bloodstained blade to Liu Yi",
+     "map": "DengDingShanDao",
+     "point": "LiuYi_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.柳义.任务死亡"
+      }
+     ],
+     "pos": [
+      -66472,
+      -68271,
+      19523
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Pull out Moji's sword",
+     "map": "DengDingShanDao",
+     "point": "LiuYi_3",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.柳义.完成任务"
+      }
+     ],
+     "pos": [
+      -66472,
+      -68271,
+      19523
+     ]
+    }
+   ],
+   "region": "DengDingShanDao",
+   "group": "dengdingshandao",
+   "missables": [
+    "dont-forget-me"
+   ],
+   "entries": [
+    "DengDingShanDao:ShaChiWeapon:0"
+   ]
+  },
+  {
+   "id": "MoJiaoZhiNv",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/MoJiaoZhiNv.MoJiaoZhiNv_C",
+   "cat": "tale",
+   "title": "DAUGHTER OF THE DARK SECT",
+   "subtitle": "The heart reveals the pure and tainted",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Will Red appear again?",
+     "map": "ZhengDaoDaYing",
+     "point": "MoJiaoZhiNv_1",
+     "pos": [
+      23310,
+      82717,
+      10163
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Learn the identity of Red",
+     "map": "ZhengDaoDaYing",
+     "point": "MoJiaoZhiNv_S1",
+     "pos": [
+      22544,
+      80457,
+      8689
+     ]
+    }
+   ],
+   "region": "ZhengDaoDaYing",
+   "group": "zhengdaodaying",
+   "missables": [
+    "red-swordswoman"
+   ]
+  },
+  {
+   "id": "NanYanZhiYin",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/NanYanZhiYin.NanYanZhiYin_C",
+   "cat": "tale",
+   "title": "FESTERING SECRET",
+   "subtitle": "Some wounds are destined to remain unseen",
+   "branches": [
+    {
+     "id": "1",
+     "text": "What secret lies within the outpost's chain-sealed courtyard?",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_1",
+     "pos": [
+      -40545,
+      264517,
+      -24735
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Investigate the chain-sealed courtyard at the outpost",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_2",
+     "pos": [
+      -40085,
+      263248,
+      -24735
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Uncover the truth of how the Mandate disciples became Maskwalkers",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_3",
+     "pos": [
+      -33016,
+      266882,
+      -25633
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Deliver the captain's order to his lieutenant at the Sha-Chi Tower outskirts",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_4",
+     "pos": [
+      -55662,
+      227525,
+      -19792
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Show the captain evidence of Gu Lingran's crimes",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_5",
+     "pos": [
+      -33016,
+      266882,
+      -25633
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Confront the captain about the suspected Transcension",
+     "map": "XiGu",
+     "point": "NanYanZhiYin_S1",
+     "pos": [
+      -33016,
+      266882,
+      -25633
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "missables": [
+    "festering-secret"
+   ]
+  },
+  {
+   "id": "PiPaTanZou",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/PiPaTanZou.PiPaTanZou_C",
+   "cat": "tale",
+   "title": "",
+   "unused": true,
+   "branches": []
+  },
+  {
+   "id": "QingLiMenHu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/QingLiMenHu.QingLiMenHu_C",
+   "cat": "tale",
+   "title": "PURGE THE SECT",
+   "subtitle": "Sever the past that cannot be reclaimed",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Eliminate the Old Archer's corrupted disciples at the Ruthless Archer Camp",
+     "map": "XiGu",
+     "point": "QingLiMenHu_1",
+     "pos": [
+      -73752,
+      230900,
+      -15865
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Give the Broken-String Feather Bow to the Old Archer at the outpost",
+     "map": "XiGu",
+     "point": "QingLiMenHu_2",
+     "pos": [
+      -35389,
+      264366,
+      -24971
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "missables": [
+    "feather-bow"
+   ]
+  },
+  {
+   "id": "QuanXin",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/QuanXin.QuanXin_C",
+   "cat": "tale",
+   "title": "HEART OF THE FIST",
+   "subtitle": "A Tempered Resolve Still Endures",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the Iron Fist Master's gravestone in the snow-covered Mirrorwood",
+     "map": "FuJiZhiLin",
+     "point": "QuanXin_1",
+     "pos": [
+      -43319,
+      177762,
+      9738
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin"
+  },
+  {
+   "id": "RenOuMuXin",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/RenOuMuXin.RenOuMuXin_C",
+   "cat": "tale",
+   "title": "A PUPPET'S WOODEN HEART",
+   "subtitle": "When will we meet again?",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Deliver the Songstress Puppet's letter to Pei",
+     "map": "LuJiaCun",
+     "point": "RenOuMuXin_1",
+     "pos": [
+      -44062,
+      114245,
+      -1956
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Will the Songstress Puppet and Pei ever find their happy ending?",
+     "map": "LuJiaCun",
+     "point": "RenOuMuXin_2",
+     "pos": [
+      -49726,
+      92480,
+      1968
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Tell the Songstress Puppet of Pei's fate",
+     "map": "LuJiaCun",
+     "point": "RenOuMuXin_3",
+     "pos": [
+      -44062,
+      114245,
+      -1956
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Find Pei's body",
+     "map": "LuJiaCun",
+     "point": "RenOuMuXin_S1",
+     "pos": [
+      -49726,
+      92480,
+      1968
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun"
+  },
+  {
+   "id": "RuMengQiZi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/RuMengQiZi.RuMengQiZi_C",
+   "cat": "tale",
+   "title": "A DREAM OF MOTHERHOOD",
+   "subtitle": "The pain of unfulfilled desire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the puppet containing the weaver's soul",
+     "map": "LuJiaCun",
+     "point": "RuMengQiZi_1",
+     "pos": [
+      -39060,
+      124368,
+      -2870
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Return to the weaver's body",
+     "map": "LuJiaCun",
+     "point": "RuMengQiZi_2",
+     "pos": [
+      -39060,
+      124368,
+      -2870
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "missables": [
+    "weaver"
+   ]
+  },
+  {
+   "id": "TouPaiHuaDan",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/TouPaiHuaDan.TouPaiHuaDan_C",
+   "cat": "tale",
+   "title": "THE STAR PERFORMER",
+   "subtitle": "Who remembers the crimson silks upon the stage?",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Lure out the Tianxiang Pavilion doorman in the alley beside the Pangzhen Opera Stage",
+     "map": "PangZhen",
+     "point": "TouPaiHuaDan_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.头牌花旦.获得钥匙"
+      }
+     ],
+     "pos": [
+      -189805,
+      118370,
+      -4032
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Enter Tianxiang Pavilion",
+     "map": "PangZhen",
+     "point": "TouPaiHuaDan_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.头牌花旦.打开大门"
+      }
+     ],
+     "pos": [
+      -184401,
+      121475,
+      -3952
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Find the leading opera performer's dance fan",
+     "map": "PangZhen"
+    },
+    {
+     "id": "4",
+     "text": "Return the fan to the lead performer puppet in the tavern",
+     "map": "PangZhen",
+     "point": "TouPaiHuaDan_4",
+     "pos": [
+      -193388,
+      121249,
+      -3907
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "entries": [
+    "PangZhen:YaoShi:0"
+   ]
+  },
+  {
+   "id": "WuXiangWang",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/WuXiangWang.WuXiangWang_C",
+   "cat": "tale",
+   "title": "DON'T FORGET ME",
+   "subtitle": "Life or Death",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Deliver Zhou Ping's last letter to a woman named Yuling in Pangzhen",
+     "map": "PangZhen",
+     "point": "WuXiangWang_1",
+     "pos": [
+      -179642,
+      128070,
+      -5541
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "The woman on Pangzhen's inn roof keeps murmuring, \"Senior Brother Zhou.\" Could her soul have been displaced?",
+     "map": "PangZhen"
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "missables": [
+    "dont-forget-me"
+   ]
+  },
+  {
+   "id": "XiangJianHeJi",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/XiangJianHeJi.XiangJianHeJi_C",
+   "cat": "tale",
+   "title": "KIN AGAINST KIN",
+   "subtitle": "Shared roots, divergent fates",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Uncover the whereabouts of the farmer's younger brother",
+     "map": "HouJie",
+     "point": "XiangJianHeJi_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.相煎何急.完成任务"
+      }
+     ],
+     "pos": [
+      -261239,
+      53435,
+      -4695
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen"
+  },
+  {
+   "id": "XiaoCui",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/XiaoCui.XiaoCui_C",
+   "cat": "tale",
+   "title": "CUI",
+   "subtitle": "Three generations, gone with the dawn",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find Cui's grandfather",
+     "map": "LuJiaCun",
+     "point": "XiaoCui_1",
+     "pos": [
+      -60292,
+      87102,
+      -5448
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Open the Mountain Gate",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.陆三迁1.完成任务"
+      }
+     ],
+     "pos": [
+      -60848,
+      -52287,
+      17559
+     ]
+    },
+    {
+     "id": "2-ex",
+     "text": "Will Lu Sanqian reach the shrine?",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_2-ex",
+     "pos": [
+      -60012,
+      -50265,
+      17725
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Free Lu Sanqian from the cage",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_3",
+     "pos": [
+      -60073,
+      -67457,
+      22523
+     ]
+    },
+    {
+     "id": "4-A",
+     "text": "Lu Sanqian drank the Rootless Dew. Perhaps your paths will cross again",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_4-A",
+     "pos": [
+      -60073,
+      -67457,
+      20468
+     ]
+    },
+    {
+     "id": "4-B",
+     "text": "Lu Sanqian's days are few—will your paths ever cross again?",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_4-B",
+     "pos": [
+      -60073,
+      -67457,
+      20468
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Find Cui's parents",
+     "map": "DengDingShanDao",
+     "point": "XiaoCui_5",
+     "pos": [
+      -60847,
+      -92622,
+      29132
+     ]
+    },
+    {
+     "id": "6",
+     "text": "Find Cui, Lu Sanqian's granddaughter.",
+     "map": "LuJiaCun",
+     "point": "XiaoCui_6",
+     "pos": [
+      -60292,
+      87102,
+      -5448
+     ]
+    }
+   ],
+   "region": "LuJiaCun",
+   "group": "lujiacun",
+   "regions": [
+    "LuJiaCun",
+    "DengDingShanDao"
+   ],
+   "missables": [
+    "cui",
+    "crude-radiant-heart"
+   ]
+  },
+  {
+   "id": "XiaoXue",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/XiaoXue.XiaoXue_C",
+   "cat": "tale",
+   "title": "XUE, ADMIRER OF HEROES",
+   "subtitle": "Gazing upon the Wulin's road, thirsting for heroes' blood",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Collect the Heroes' Belongings from Xue",
+     "map": "ZhengDaoDaYing",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ljc.小雪.收集物3",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.小雪.收集物1",
+       "map": "ZhengDaoDaYing"
+      },
+      {
+       "type": "tag",
+       "tag": "ljc.小雪.收集物2",
+       "map": "ZhengDaoDaYing"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Give the Heroes' Belongings to the Child of Insight in Pangzhen",
+     "map": "PangZhen",
+     "point": "XiaoXue_2",
+     "pos": [
+      -170440,
+      116345,
+      -523
+     ]
+    }
+   ],
+   "region": "ZhengDaoDaYing",
+   "group": "zhengdaodaying",
+   "regions": [
+    "ZhengDaoDaYing",
+    "PangZhen"
+   ]
+  },
+  {
+   "id": "XiongFu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/XiongFu.XiongFu_C",
+   "cat": "tale",
+   "title": "FOUR FIERCE AXES",
+   "subtitle": "Specks of rust, lingering grudges",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Gather evidence of the conspiracy against The Four Axes",
+     "map": "XiGu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.7",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.1",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.2",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.3",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.4",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.5",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.凶斧收集物.6",
+       "map": "XiGu"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Deliver the evidence against the Mandate leaders to the Child of Insight in Pangzhen",
+     "map": "PangZhen",
+     "point": "XiongFu_2",
+     "pos": [
+      -170440,
+      116345,
+      -523
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Uncover the truth behind The Four Axes Rebellion",
+     "map": "XiGu"
+    },
+    {
+     "id": "S2",
+     "text": "Axemaster Peng Meng has become a Maskwalker. Defeat him",
+     "map": "XiGu",
+     "point": "XiongFu_S2",
+     "pos": [
+      -52129,
+      258639,
+      -24360
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "PangZhen"
+   ],
+   "missables": [
+    "festering-secret"
+   ]
+  },
+  {
+   "id": "YiBiZhiDao",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/YiBiZhiDao.YiBiZhiDao_C",
+   "cat": "tale",
+   "title": "USE IT AGAINST THEM",
+   "subtitle": "Weapon in hand, put it to the test",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Challenge Jade Dancer and Iron Fiend using only the primary weapon Fiend Saws and the Phantom Edge Iron Gauntlets",
+     "map": "FuJiZhiLin",
+     "point": "YiBiZhiDao_1",
+     "pos": [
+      -43575,
+      178038,
+      9643
+     ]
+    }
+   ],
+   "region": "FuJiZhiLin",
+   "group": "fujizhilin"
+  },
+  {
+   "id": "YiGeBuLiu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/YiGeBuLiu.YiGeBuLiu_C",
+   "cat": "tale",
+   "title": "LEAVE NONE ALIVE",
+   "subtitle": "Fallen leaves in an empty courtyard, lingering shadows of the past",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Return to the Weeping Creek Valley Outpost and the Crimson Forest Camp to investigate",
+     "map": "XiGu",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.一个不留.佛珠",
+       "map": "XiGu"
+      },
+      {
+       "type": "tag",
+       "tag": "quest.一个不留.飞贼秘籍",
+       "map": "FuJiZhiLin"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Find Monk Huijue of Kuye Temple at the Weeping Creek Valley Outpost",
+     "map": "XiGu",
+     "point": "YiGeBuLiu_2",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.一个不留.佛珠"
+      }
+     ],
+     "pos": [
+      -33731,
+      269356,
+      -26256
+     ]
+    },
+    {
+     "id": "2-1",
+     "text": "Bring Huijue's relic to the Kuye Temple monk in Village of Lu",
+     "map": "LuJiaCun",
+     "point": "YiGeBuLiu_2-1",
+     "pos": [
+      -42537,
+      111948,
+      -39
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Return to the Crimson Forest Camp to check on the thieves",
+     "map": "FuJiZhiLin",
+     "point": "YiGeBuLiu_3",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "quest.一个不留.飞贼秘籍"
+      }
+     ],
+     "pos": [
+      -70868,
+      156816,
+      -495
+     ]
+    },
+    {
+     "id": "3-1",
+     "text": "Give the thief's relic to his companion",
+     "map": "LuJiaCun",
+     "point": "YiGeBuLiu_3-1",
+     "pos": [
+      -60965,
+      107766,
+      -1717
+     ]
+    }
+   ],
+   "region": "XiGu",
+   "group": "xigu",
+   "regions": [
+    "XiGu",
+    "LuJiaCun",
+    "FuJiZhiLin"
+   ],
+   "missables": [
+    "leave-none-alive"
+   ],
+   "entries": [
+    "LuJiaCun:Accessory:3",
+    "LuJiaCun:Accessory:2"
+   ]
+  },
+  {
+   "id": "YongShengDaoZhu",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/YongShengDaoZhu.YongShengDaoZhu_C",
+   "cat": "tale",
+   "title": "LEDGER OF ATONEMENT",
+   "subtitle": "Full of Names, yet no sin erased",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Find the ledger for the agonized Maskwalker",
+     "map": "DengDingShanDao",
+     "point": "YongShengDaoZhu_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "ddsd.获得物品.赎罪名单"
+      }
+     ],
+     "pos": [
+      -54614,
+      -65595,
+      19272
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Bring the ledger back to the agonized Maskwalker",
+     "map": "DengDingShanDao",
+     "point": "YongShengDaoZhu_2",
+     "pos": [
+      -53537,
+      -75426,
+      25632
+     ]
+    }
+   ],
+   "region": "DengDingShanDao",
+   "group": "dengdingshandao",
+   "missables": [
+    "snow-and-blood"
+   ]
+  },
+  {
+   "id": "ZaiHuiXiongZhang",
+   "cls": "/Game/PBZstory/PBZQuest/Simple/ZaiHuiXiongZhang.ZaiHuiXiongZhang_C",
+   "cat": "tale",
+   "title": "A BROTHER ONCE MORE",
+   "subtitle": "Bound by blood, unbroken by adversity",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Learn the whereabouts of Xiu's brother, Jin",
+     "map": "PangZhen",
+     "point": "ZaiHuiXiongZhang_1",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "pz.再会兄长.完成任务"
+      }
+     ],
+     "pos": [
+      -170666,
+      118923,
+      -3370
+     ]
+    },
+    {
+     "id": "S1",
+     "text": "Xiu's brother Jin wanders the shallows near Village of Lu by Meigu Lake",
+     "map": "MeiGuHu",
+     "point": "ZaiHuiXiongZhang_S1",
+     "pos": [
+      -67757,
+      78136,
+      999
+     ]
+    }
+   ],
+   "region": "PangZhen",
+   "group": "pangzhen",
+   "regions": [
+    "PangZhen",
+    "MeiGuHu"
+   ]
+  },
+  {
+   "id": "Tutorial_JianDunRenOu1",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_JianDunRenOu1.Tutorial_JianDunRenOu1_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "2",
+     "text": "Attacks from the front cannot easily break shields!"
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_JianDunRenOu2",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_JianDunRenOu2.Tutorial_JianDunRenOu2_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Parry <Tutorial_Title_Blue>Blue-flash Attacks</> to trigger <Tutorial_Title_Red>Ghoststep</> and move behind enemies."
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_Longzhu1",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_Longzhu1.Tutorial_Longzhu1_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Parry <Tutorial_Body_Blue>Blue-flash Attacks</> and Perfect Dodge <Tutorial_Body_Red>Red-flash Attacks</> whenever possible to gain the upper hand!"
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_Longzhu2",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_Longzhu2.Tutorial_Longzhu2_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Keep attacking relentlessly! If you stop, the Man in Black's Sha-Chi will rapidly recover!"
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_Longzhu3",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_Longzhu3.Tutorial_Longzhu3_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "The Man in Black can deplete your Sha-Chi, leaving you vulnerable.\nPress<InputAction id=\"ChangeWeapon\" height=\"26\" RightPadding=\"5\" LeftPadding=\"5\"/>to switch weapons and fully restore Sha-Chi!"
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_Longzhu4",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_Longzhu4.Tutorial_Longzhu4_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "<InputAction id=\"SpecialAttack\" height=\"26\" RightPadding=\"5\" LeftPadding=\"0\"/> Power Surges can interrupt powerful enemy skills!\n<InputAction id=\"HeavyAttack\" height=\"26\" RightPadding=\"5\" LeftPadding=\"0\"/> Sha-Chi Attacks to build Sha-Chi Essence <Niagara id=\"Fire\"/> faster!"
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_Attack",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_Attack.Tutorial_ZLGW_Attack_C",
+   "cat": "tutorial",
+   "title": "ATTACK",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Hit enemies with <Tutorial_Title_Yellow>Standard Combos</>!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.LockOn"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.BasicCombo"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Land two different <Tutorial_Title_Yellow>Sha-Chi Combos</> on the enemy!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.BBB"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.ABB"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.AABB"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.AAABB"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_CavalryFight",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_CavalryFight.Tutorial_ZLGW_CavalryFight_C",
+   "cat": "tutorial",
+   "title": "",
+   "unused": true,
+   "branches": [
+    {
+     "id": "1",
+     "text": "None",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "rzgd.马车战.击杀追兵1"
+      },
+      {
+       "type": "tag",
+       "tag": "rzgd.马车战.击杀追兵2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_CavalryShoot",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_CavalryShoot.Tutorial_ZLGW_CavalryShoot_C",
+   "cat": "tutorial",
+   "title": "Under Fire",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Defend against ranged attacks!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "rzgd.马车战.抵挡射击1"
+      },
+      {
+       "type": "tag",
+       "tag": "rzgd.马车战.抵挡射击3"
+      },
+      {
+       "type": "tag",
+       "tag": "rzgd.马车战.抵挡射击2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_Defend",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_Defend.Tutorial_ZLGW_Defend_C",
+   "cat": "tutorial",
+   "title": "Block & Dodge",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Enter Guard Stance and move a short distance",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.L1Move"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.L1"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Block two full enemy combos!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.L1.1"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.L1.2"
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Use <Tutorial_Title_Yellow>Standard Combos</> to deplete enemies' Sha-Chi and make them <Tutorial_Title_Yellow>Guard-Broken</>!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.Break.1"
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "text": "<Tutorial_Title_Yellow>Sha-Chi Combos</> will break enemies' guard faster!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.Break.2"
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Dodge enemy attacks!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.R1.2"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.R1.1"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.R1.3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_Defend2",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_Defend2.Tutorial_ZLGW_Defend2_C",
+   "cat": "tutorial",
+   "title": "To the Death!",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Give it all you've got! Use combos to break Zuo Shang's guard!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.雨夜左殇.破防"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Tutorial_ZLGW_Skill",
+   "cls": "/Game/PBZstory/PBZQuest/Tutorial/Tutorial_ZLGW_Skill.Tutorial_ZLGW_Skill_C",
+   "cat": "tutorial",
+   "title": "SKILLS",
+   "branches": [
+    {
+     "id": "1",
+     "text": "Execute a <Tutorial_Body_Yellow>Parry</> against three attacks!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T14"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T14A"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T14B"
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "text": "Press<InputAction id=\"Stance\" height=\"26\" RightPadding=\"5\" LeftPadding=\"5\"/>just before the enemy's <Tutorial_Title_Blue>Blue-flash Attack</> lands!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T15"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T15A"
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "text": "Press<InputAction id=\"Dash\" height=\"26\" RightPadding=\"5\" LeftPadding=\"5\"/>just before the enemy's <Tutorial_Title_Red>Red-flash Attack</> lands!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T16A"
+      },
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T16"
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "text": "Press<InputAction id=\"SpecialAttack\" height=\"26\" RightPadding=\"5\" LeftPadding=\"5\"/>to use <Tutorial_Title_Green>Power Surge</> on enemies!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T17"
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "text": "Defeat Zuo Shang!",
+     "tasks": [
+      {
+       "type": "tag",
+       "tag": "DEMO.battle.T18"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

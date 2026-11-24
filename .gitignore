@@ -1,0 +1,29 @@
+# Build outputs
+/target
+**/dist
+**/dist-preview
+/node_modules
+**/node_modules
+apps/desktop/src-tauri/gen
+
+# Legacy prototype folder kept locally as backup
+/PBZ-Map-Companion/
+/.claude/
+PBZ_*.png
+
+# Save files and local backups
+*.sav
+*.bak
+backups/
+saves/
+companion.json
+game-assets/
+
+# Python caches
+__pycache__/
+*.pyc
+.venv/
+
+# OS & editor junk
+.DS_Store
+Thumbs.db

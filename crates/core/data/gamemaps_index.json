@@ -1,0 +1,515 @@
+{
+ "generated": "2026-11-19T23:33:45",
+ "source": {
+  "anchors": "/Game/PBZContent/Maps/GlobalMapAnchorData.GlobalMapAnchorData",
+  "mapData": "ProjectPBZ/Content/PBZContent/DataTable/UI/DT_MapData.uasset"
+ },
+ "tileSize": 256,
+ "format": "webp",
+ "regions": {
+  "xigu": {
+   "name": "Weeping Creek Valley",
+   "texture": "T_MapTest_Xigu_0710",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "xigu",
+   "subMaps": [
+    "XiGu"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "xigu",
+     "texture": "T_MapTest_Xigu_0710",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "fujizhilin": {
+   "name": "Crimson Forest",
+   "texture": "T_MapTest_Fujizhilin_0717",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "fujizhilin",
+   "subMaps": [
+    "FuJiZhiLin"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "fujizhilin",
+     "texture": "T_MapTest_Fujizhilin_0717",
+     "width": 8192,
+     "height": 8192
+    },
+    {
+     "id": "winter",
+     "path": "fujizhilin_winter",
+     "texture": "T_MapTest_winterFujizhilin_0717",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "zhengdaodaying": {
+   "name": "Mandate Encampment",
+   "texture": "T_Map_DaYing_8k",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "zhengdaodaying",
+   "subMaps": [
+    "ZhengDaoDaYing"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "zhengdaodaying",
+     "texture": "T_Map_DaYing_8k",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "pangzhen": {
+   "name": "Pangzhen",
+   "texture": "T_Map_PZ_8k",
+   "width": 8192,
+   "height": 4512,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "pangzhen",
+   "subMaps": [
+    "PangZhen",
+    "HouJie",
+    "XiMeng"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "pangzhen",
+     "texture": "T_Map_PZ_8k",
+     "width": 8192,
+     "height": 4512
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "meiguhu": {
+   "name": "Meigu Lake",
+   "texture": "T_MapTest_MGH0717",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "meiguhu",
+   "subMaps": [
+    "MeiGuHu",
+    "MeiGu_YiJi"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "meiguhu",
+     "texture": "T_MapTest_MGH0717",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "duanhun": {
+   "name": "Mount Soulrend",
+   "texture": "T_MapTest_DH",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "duanhun",
+   "subMaps": [
+    "DuanHunYa",
+    "DuanHunShan"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "duanhun",
+     "texture": "T_MapTest_DH",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "dengdingshandao": {
+   "name": "Mountain of Imprisonment",
+   "texture": "T_Map_DDSD",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "dengdingshandao",
+   "subMaps": [
+    "DengDingShanDao"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "dengdingshandao",
+     "texture": "T_Map_DDSD",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "lujiacun": {
+   "name": "Village of Lu",
+   "texture": "T_MapTest_Lujiacun_0710",
+   "width": 8192,
+   "height": 8192,
+   "minZoom": 0,
+   "maxZoom": 5,
+   "path": "lujiacun",
+   "subMaps": [
+    "LuJiaCun"
+   ],
+   "layers": [
+    {
+     "id": "default",
+     "path": "lujiacun",
+     "texture": "T_MapTest_Lujiacun_0710",
+     "width": 8192,
+     "height": 8192
+    }
+   ],
+   "projection": "anchor-mesh"
+  },
+  "bigmap": {
+   "name": "bigmap",
+   "texture": "T_Jianghu_BigMap_Ground",
+   "width": 1024,
+   "height": 1024,
+   "minZoom": 0,
+   "maxZoom": 2,
+   "path": "bigmap",
+   "subMaps": [],
+   "layers": [
+    {
+     "id": "default",
+     "path": "bigmap",
+     "texture": "T_Jianghu_BigMap_Ground",
+     "width": 1024,
+     "height": 1024
+    },
+    {
+     "id": "underground",
+     "path": "bigmap_underground",
+     "texture": "T_Jianghu_BigMap_Underground",
+     "width": 1024,
+     "height": 1024
+    }
+   ],
+   "projection": null
+  }
+ },
+ "subMaps": {
+  "XiGu": {
+   "name": "Weeping Creek Valley",
+   "region": "xigu",
+   "world": "PBZ_Xigu_WP",
+   "dtRow": "XiGu",
+   "anchors": 1137,
+   "groups": 52,
+   "approxAffinePx": [
+    [
+     0.0571087817316766,
+     -0.05436382776875549,
+     20158.13381238831
+    ],
+    [
+     0.03546945654809813,
+     0.029923682794157868,
+     -2623.8975702850007
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 777.7,
+    "max": 3178.0
+   }
+  },
+  "FuJiZhiLin": {
+   "name": "Crimson Forest",
+   "region": "fujizhilin",
+   "world": "PBZ_Fujizhilin_WP",
+   "dtRow": "FuJiZhiLin",
+   "anchors": 1048,
+   "groups": 45,
+   "approxAffinePx": [
+    [
+     0.05893555338920211,
+     -0.013583251303809319,
+     9679.573703802616
+    ],
+    [
+     -0.00371549445192772,
+     0.08619379825403456,
+     -10229.529428865682
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 550.5,
+    "max": 2238.1
+   }
+  },
+  "ZhengDaoDaYing": {
+   "name": "Mandate Encampment",
+   "region": "zhengdaodaying",
+   "world": "PBZ_Zhengdaodaying_WP",
+   "dtRow": "ZhengDaoDaYing",
+   "anchors": 495,
+   "groups": 23,
+   "approxAffinePx": [
+    [
+     0.0837972718756825,
+     0.010725921112856638,
+     1054.0786161919148
+    ],
+    [
+     -0.001349094141561637,
+     0.08840083602332142,
+     -3479.286258706263
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 366.0,
+    "max": 1685.8
+   }
+  },
+  "PangZhen": {
+   "name": "Pangzhen",
+   "region": "pangzhen",
+   "world": "PBZ_Pangzhen_WP",
+   "dtRow": "PangZhen",
+   "anchors": 611,
+   "groups": 14,
+   "approxAffinePx": [
+    [
+     0.043381071004233836,
+     0.004915302053490189,
+     12651.562344567712
+    ],
+    [
+     -0.00288233422219801,
+     0.02944697066133997,
+     -1002.7850915522595
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 52.5,
+    "max": 299.8
+   }
+  },
+  "MeiGuHu": {
+   "name": "Meigu Lake",
+   "region": "meiguhu",
+   "world": "PBZ_Pangzhen_WP",
+   "dtRow": "MeiGuHu",
+   "anchors": 416,
+   "groups": 17,
+   "approxAffinePx": [
+    [
+     0.029524811940071564,
+     -0.0012875638097427204,
+     6930.449387330784
+    ],
+    [
+     0.0017228995230653852,
+     0.02858075230805192,
+     3964.82680355542
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 146.1,
+    "max": 2959.7
+   }
+  },
+  "DuanHunYa": {
+   "name": "Soulrend Cliff",
+   "region": "duanhun",
+   "world": "PBZ_Duanhun_WP",
+   "dtRow": "DuanHunYa",
+   "anchors": 753,
+   "groups": 38,
+   "approxAffinePx": [
+    [
+     0.07767955456451968,
+     0.0795520558275997,
+     24415.352328779725
+    ],
+    [
+     -0.020544398114658104,
+     0.053550810605808984,
+     5306.832030329206
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 554.2,
+    "max": 1876.7
+   }
+  },
+  "DengDingShanDao": {
+   "name": "Mountain of Imprisonment",
+   "region": "dengdingshandao",
+   "world": "PBZ_DengDingShanDao_WP",
+   "dtRow": "DengDingShanDao",
+   "anchors": 411,
+   "groups": 20,
+   "approxAffinePx": [
+    [
+     -0.00014529018923107646,
+     0.07109948646896948,
+     8493.993770586576
+    ],
+    [
+     -0.07247321071792703,
+     0.09740023479640561,
+     5859.42147871784
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 801.3,
+    "max": 2044.0
+   }
+  },
+  "HouJie": {
+   "name": "Pangzhen Back Streets",
+   "region": "pangzhen",
+   "world": "PBZ_Houjie_WP",
+   "dtRow": "HouJie",
+   "anchors": 939,
+   "groups": 28,
+   "approxAffinePx": [
+    [
+     0.03690827919094115,
+     -0.0020590311380971876,
+     12315.706495145718
+    ],
+    [
+     0.0010347746711084156,
+     0.020133454145568913,
+     857.4228836820157
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 59.5,
+    "max": 235.7
+   }
+  },
+  "XiMeng": {
+   "name": "Mirage Estate",
+   "region": "pangzhen",
+   "world": "PBZ_Ximeng_WP",
+   "dtRow": "XiMeng",
+   "anchors": 470,
+   "groups": 17,
+   "approxAffinePx": [
+    [
+     0.02696530020460587,
+     -0.0011447683958984124,
+     10082.114233348972
+    ],
+    [
+     0.00797153034310469,
+     0.02059211681098658,
+     1827.9565057502866
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 178.9,
+    "max": 1963.2
+   }
+  },
+  "LuJiaCun": {
+   "name": "Village of Lu",
+   "region": "lujiacun",
+   "world": "PBZ_Zhengdaodaying_WP",
+   "dtRow": "LuJiaCun",
+   "anchors": 754,
+   "groups": 32,
+   "approxAffinePx": [
+    [
+     0.0974058480410286,
+     -0.02001706115208293,
+     11236.640687981571
+    ],
+    [
+     0.01646713539038034,
+     0.019969309819775398,
+     3144.4720821041115
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 1154.7,
+    "max": 4378.2
+   }
+  },
+  "MeiGu_YiJi": {
+   "name": "Meigu Lake Ruins",
+   "region": "meiguhu",
+   "world": "PBZ_Huanshuyiji2_WP",
+   "dtRow": "HuanShuShi",
+   "anchors": 78,
+   "groups": 6,
+   "approxAffinePx": [
+    [
+     0.024694564535206735,
+     -0.01256825940306463,
+     5789.812165541694
+    ],
+    [
+     0.02253658626123039,
+     0.010779947650975423,
+     7119.335517131288
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 221.4,
+    "max": 940.5
+   }
+  },
+  "DuanHunShan": {
+   "name": "Mount Soulrend",
+   "region": "duanhun",
+   "world": "PBZ_Duanhun_WP",
+   "dtRow": "DuanHunShan",
+   "anchors": 253,
+   "groups": 12,
+   "approxAffinePx": [
+    [
+     0.04380648561684634,
+     -0.02150169135570427,
+     13284.742295768687
+    ],
+    [
+     0.028473682214704157,
+     0.029898081386652856,
+     11387.013040699378
+    ]
+   ],
+   "approxAffineResidualPx": {
+    "median": 385.1,
+    "max": 1454.5
+   }
+  }
+ }
+}

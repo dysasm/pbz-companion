@@ -1,0 +1,24 @@
+[package]
+name = "pbz-desktop"
+description = "Phantom Blade Zero Companion & Save Editor desktop shell"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+[lib]
+name = "pbz_desktop_lib"
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { workspace = true }
+
+[dependencies]
+pbz-core = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tauri = { workspace = true }
+tauri-plugin-dialog = { workspace = true }
+
+[lints]
+workspace = true

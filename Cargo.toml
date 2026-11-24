@@ -1,0 +1,41 @@
+[workspace]
+resolver = "3"
+members = ["crates/core", "apps/desktop/src-tauri"]
+default-members = ["crates/core", "apps/desktop/src-tauri"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+repository = "https://github.com/dysasm/pbz-companion"
+
+[workspace.dependencies]
+pbz-core = { path = "crates/core" }
+aes-gcm = "0.10.3"
+chrono = { version = "0.4.44", default-features = false, features = ["std", "clock"] }
+flate2 = "1.1.9"
+oozextract = "0.5.7"
+rand = "0.8.5"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+sha2 = "0.10.9"
+tauri = { version = "2.10.3", features = [] }
+tauri-build = { version = "2.5.6", features = [] }
+tauri-plugin-dialog = "2.6.0"
+thiserror = "2.0.18"
+walkdir = "2.5.0"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev.package.pbz-core]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = 3
+strip = true
